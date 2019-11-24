@@ -14,5 +14,5 @@ D6 & D7 : TX & RX of GY-NEO6MV2 respectively.
 D4 : Data
 
 ## Online Synchronization
-* ThingSpeak (https://thingspeak.com/)
+* ThingSpeak (https://thingspeak.com/channels/920137)
 * Plaive (https://plaive.10make.com/)
