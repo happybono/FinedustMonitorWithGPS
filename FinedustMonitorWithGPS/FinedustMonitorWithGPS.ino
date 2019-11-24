@@ -15,9 +15,9 @@ RunningMedian pm10s = RunningMedian(19);
 
 char* ssid = "HappyBono-GalaxyNote10+";   
 char* password = "06020688";    
-String api_key = "*2446388DA8B643EE7AA752DB64A42926444CDE2A";
-#define PLAIVE_SERVER_ENABLE
-//#define THINGSPEAK_SERVER_ENABLE
+String api_key = "JI72AV739KL4UD7N";
+//#define PLAIVE_SERVER_ENABLE
+#define THINGSPEAK_SERVER_ENABLE
 
 boolean wifi_ready;
 float map_x, map_y;
@@ -43,9 +43,9 @@ void do_interval() {
     do_server_plaive(api_key,int(pm25s.getMedian()), int(pm10s.getMedian()), get_temperature(), s_map_x, s_map_y);
 #else
   #ifdef THINGSPEAK_SERVER_ENABLE
-    do_server_thingspeak(api_key,int(pm25s.getMedian()), int(pm10s.getMedian()),get_temperature());
+    do_server_thingspeak(api_key,int(pm25s.getMedian()), int(pm10s.getMedian()), get_temperature(), s_map_x, s_map_y);;
   #else
-    do_server_default(api_key,int(pm25s.getMedian()), int(pm10s.getMedian()),get_temperature());
+    do_server_default(api_key,int(pm25s.getMedian()), int(pm10s.getMedian()), get_temperature(), s_map_x, s_map_y);
   #endif
 #endif
   } 
