@@ -1,4 +1,6 @@
 # FinedustMonitorWithGPS
+Fine dust monitoring device powered by NodeMCU with the location tracking capability.
+
 ## SDS011 Dust Sensor
 D1 : TX of SDS011
 
