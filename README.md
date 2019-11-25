@@ -18,6 +18,7 @@
 * D4 : Data
 
 ## KOKIRI A-PACK FIXIE 5 (KP-LS50) Portable Battery
+* Dimension : W (62.3 mm) × D (112.0 mm) × H (13.0 mm)
 * 5000mAh
 
 ## Online Synchronization
