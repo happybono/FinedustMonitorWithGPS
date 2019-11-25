@@ -22,7 +22,7 @@
 
 ## KOKIRI A-PACK FIXIE 5 (KP-LS50) Portable Battery
 * Dimension : W (62.3 mm) × D (112.0 mm) × H (13.0 mm)
-* 5000 mAh
+* Capacity : 5000 mAh
 
 ## Online Synchronization
 * ThingSpeak (https://thingspeak.com/channels/920137)
