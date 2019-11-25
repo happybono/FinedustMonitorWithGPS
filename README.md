@@ -8,6 +8,7 @@
 * D3 : Data, D2 : Clock
 
 ## GY-NEO6MV2 GPS Sensor
+* Soldering Required.
 * D6 & D7 : TX & RX of GY-NEO6MV2 respectively.
 
 ## DS18820 Temperature Sensor (Thermometer)
