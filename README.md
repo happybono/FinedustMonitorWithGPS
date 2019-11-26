@@ -27,9 +27,9 @@
 
 ## Data Refinement / Synchronization
 * ThingSpeak (https://thingspeak.com/channels/920137)
-* Plaive (https://plaive.10make.com/)
-
 ![ThingSpeak Screenshot](ThingSpeak.png)
+
+* Plaive (https://plaive.10make.com/)
 ![Plaive Screenshot](Plaive.png)
 
 ## Drivers / References
