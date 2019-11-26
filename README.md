@@ -30,6 +30,7 @@
 * Plaive (https://plaive.10make.com/)
 
 ![ThingSpeak Screenshot](ThingSpeak.png)
+![Plaive Screenshot](Plaive.png)
 
 ## Drivers / References
 Please install https://github.com/squix78/esp8266-oled-ssd1306
