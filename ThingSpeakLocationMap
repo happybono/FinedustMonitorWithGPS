@@ -1,9 +1,9 @@
-% Read the last 100 data points from a ThingSpeak Channel 
-data = thingSpeakRead(73734,'ReadKey','2I1LW1LFEWZZ0JEV','NumPoints',200); 
-% Assign latitude to field1 
-latitude = data(:,1); 
-% Assign longitude to field2 
-longitude = data(:,2); 
+% Read the last 200 data points from a ThingSpeak Channel 
+data = thingSpeakRead([Channel ID],'ReadKey',[Read API Key],'NumPoints',200); 
+% Assign latitude to field4
+latitude = data(:,4); 
+% Assign longitude to field5 
+longitude = data(:,5); 
 % Load map image 
 url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Mercator-projection.jpg/773px-Mercator-projection.jpg'; 
 img = imread(url); 
