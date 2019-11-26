@@ -25,9 +25,11 @@
 * Dimension : W (62.3 mm) × D (112.0 mm) × H (13.0 mm)
 * Capacity : 5000 mAh
 
-## Data Synchronization
+## Data Refinement / Synchronization
 * ThingSpeak (https://thingspeak.com/channels/920137)
 * Plaive (https://plaive.10make.com/)
+
+![ThingSpeak Screenshot](ThingSpeak.png)
 
 ## Drivers / References
 Please install https://github.com/squix78/esp8266-oled-ssd1306
