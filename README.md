@@ -26,10 +26,12 @@
 * Capacity : 5000 mAh
 
 ## Data Refinement / Synchronization
+### ThingSpeak
 * ThingSpeak (https://thingspeak.com/channels/920137)
+![ThingSpeak Screenshot](ThingSpeak.png)
+  
+### Plaive
 * Plaive (https://plaive.10make.com/)
-
-![ThingSpeak Screenshot](ThingSpeak.png)  
 ![Plaive Screenshot](Plaive.png)  
 
 ## Drivers / References
