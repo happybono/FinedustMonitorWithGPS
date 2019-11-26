@@ -8,7 +8,7 @@
 * Soldering required.
 * D1 : TX of SDS011
 
-## 0.96" OLED I2C
+## 0.96" I2C OLED Display 
 * Soldering required.
 * D3 : Data, D2 : Clock
 
