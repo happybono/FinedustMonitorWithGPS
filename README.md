@@ -27,10 +27,10 @@
 
 ## Data Refinement / Synchronization
 * ThingSpeak (https://thingspeak.com/channels/920137)
-![ThingSpeak Screenshot](ThingSpeak.png)
-
 * Plaive (https://plaive.10make.com/)
-![Plaive Screenshot](Plaive.png)
+
+![ThingSpeak Screenshot](ThingSpeak.png)  
+![Plaive Screenshot](Plaive.png)  
 
 ## Drivers / References
 Please install https://github.com/squix78/esp8266-oled-ssd1306
