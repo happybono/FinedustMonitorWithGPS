@@ -15,7 +15,7 @@
 * IEEE 802.11 b/g/n Wi-Fi technology.
 
 ### Battery life 
-* Up to 13 hours of typical device usage.
+* Up to 16 hours of typical device usage.
 
 ## Apparatus (Equipments)
 ### Platform
