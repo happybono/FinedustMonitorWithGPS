@@ -3,7 +3,7 @@
 
 ## Specifications
 ### Scenarios
-* Measuring finedust contamination level in the air in a real time and display on a OLED Screen. 
+* Measuring the finedust contamination level in the air in a real time and display on a OLED Screen. 
 * Measuring the current temperature.
 * Track & update devices' location in a realtime.
 * Refining data and synchronize with the web-based cloud services. (e.g. ThingSpeak, Plaive) 
