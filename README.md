@@ -9,10 +9,10 @@
 * Refining data and synchronize with the web-based cloud services. (e.g. ThingSpeak, Plaive) 
 
 ### Connections
-1 x Micro-USB
+* 1 x Micro-USB
 
 ### Wireless
-IEEE 802.11 b/g/n Wi-Fi technology.
+* IEEE 802.11 b/g/n Wi-Fi technology.
 
 ### Battery life 
 * Up to 13 hours of typical device usage.
