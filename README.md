@@ -1,12 +1,11 @@
 # FinedustMonitorWithGPS
 * Finedust monitoring device powered by NodeMCU with the location tracking capability.
-# FinedustMonitor
-* Finedust monitoring device powered by NodeMCU. 
 
 ## Specifications
 ### Scenarios
 * Measuring finedust contamination level in the air in a real time and display on a OLED Screen. 
 * Measuring the current temperature.
+* Track & update devices' location in a realtime.
 * Refining data and synchronize with the web-based cloud services. (e.g. ThingSpeak, Plaive) 
 
 ### Connections
@@ -16,7 +15,7 @@
 IEEE 802.11 b/g/n Wi-Fi technology.
 
 ### Battery life 
-* Up to 24 hours of typical device usage.
+* Up to 13 hours of typical device usage.
 
 ## Apparatus (Equipments)
 ### Platform
