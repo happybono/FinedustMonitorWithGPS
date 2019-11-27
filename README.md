@@ -1,6 +1,8 @@
 # FinedustMonitorWithGPS
 * Finedust monitoring device powered by NodeMCU with the location tracking capability.
 
+![Final Product](20191126_082913.jpg)
+
 ## Specifications
 ### Scenarios
 * Measuring the finedust contamination level in the air in a real time and display on the OLED Screen. 
