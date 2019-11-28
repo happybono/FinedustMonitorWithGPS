@@ -36,7 +36,7 @@ void got_dust(int pm25, int pm10) {                  //formula for dust sensor j
 }
 
 
-//서버에 보내기(send server)
+//서버에 데이터 보내기 (Sending collected data to server.)
 void do_interval() {               
   if (wifi_ready){
 #ifdef PLAIVE_SERVER_ENABLE
@@ -55,20 +55,20 @@ void do_interval() {
 unsigned long mark = 0;
 boolean got_interval = false;
 
-//초기 세팅  
+//초기 세팅 (Initialize.)
 void setup() {
   Serial.begin(115200);
   dust.begin(9600);
   ss.begin(9600);
   setup_oled();//oled setting
-  wifi_ready = connect_ap(ssid, password);             //wifi connection 유무
+  wifi_ready = connect_ap(ssid, password);             //wifi 연결 여부 확인 (checking wifi connection.)
   
-  if (!wifi_ready) nowifi_oled();//wifi no connection
+  if (!wifi_ready) nowifi_oled();                      //wifi no connection
   delay(5000);
   Serial.println("\nDust Sensor Box V1.2, 2019/11/24 HappyBono");
 }
 
-//아두이노가 반복적으로 작동하는 부분
+//아두이노가 반복적으로 작동하는 부분 (Where Arduino works repeatedly.)
 void loop() {
     if(ss.available()<=0){
     Serial.println("SIGNAL STATUS : WEAK");
