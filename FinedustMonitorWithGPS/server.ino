@@ -29,7 +29,7 @@ void do_server_plaive(String api_key,int pm25, int pm10, float temperature, Stri
     client.print("GET /insert.php?");
     client.print(data); 
     client.println(" HTTP/1.1");
-    client.println("Host: " + String(host_plaive)); // SERVER ADDRESS HERE TOO
+    client.println("Host: " + String(host_plaive)); // SERVER ADDRESS HERE AS WELL
     client.println("Cache-Control: no-cache");
     //client.println("Content-Type: application/xE-www-form-urlencoded"); 
     //client.print("Content-Length: "); 
@@ -57,7 +57,7 @@ void do_server_thingspeak(String api_key,int pm25, int pm10, float temperature, 
     client.print("GET /update?");
     client.print(data); 
     client.println(" HTTP/1.1");
-    client.println("Host: " + String(host_thingspeak)); // SERVER ADDRESS HERE TOO
+    client.println("Host: " + String(host_thingspeak)); // SERVER ADDRESS HERE AS WELL
     client.println("Cache-Control: no-cache");
     
     //client.println("Content-Type: application/xE-www-form-urlencoded"); 
