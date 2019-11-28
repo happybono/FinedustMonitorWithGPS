@@ -8,7 +8,7 @@ Finedust monitoring device powered by NodeMCU with the location tracking capabil
 * Measuring the finedust contamination level in the air in a real time and display on the OLED Screen. 
 * Measuring the current temperature.
 * Track & update devices' location in a realtime.
-* Refining data and synchronize with the web-based cloud services. (e.g. ThingSpeak, Plaive) 
+* Refining data and synchronize with the web-based cloud service. (e.g. ThingSpeak, Plaive) 
 
 ### Connections
 * 1 x Micro-USB
