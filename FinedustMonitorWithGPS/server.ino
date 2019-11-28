@@ -81,13 +81,13 @@ void do_server_default(String api_key,int pm25, int pm10, float temperature, Str
   data = "api_key="+ String(api_key) + "&pm25=" + String(pm25) + "&pm10=" + String(pm10) + "&temp=" + String(temperature) + "&latitude" + String(map_x) + "&longitude" + String(map_y);
   contentType= "application/x-www-form-urlencoded";
 
-  //서버 통신 공식 client.println 을 사용하여야 니다.
+  //서버 통신 공식 client.println 을 사용하여야 합니다.
   if(client.connect(host_default,httpPort)){
     Serial.println("connected");
     client.print("GET /insert.php?");
     client.print(data); 
     client.println(" HTTP/1.1");
-    client.println("Host: " + String(host_default)); // SERVER ADDRESS HERE TOO
+    client.println("Host: " + String(host_default)); // SERVER ADDRESS HERE AS WELL AS ABOVE.
     client.println("Content-Type: application/xE-www-form-urlencoded"); 
     client.print("Content-Length: "); 
     client.println(data.length()); 
