@@ -87,6 +87,7 @@ void loop() {
           map_y = gps.location.lng();
          Serial.println(String(map_x,6));
          Serial.println(String(map_y,6));
+         Serial.println(gps.satellites.value());
         }
       }
       s_map_x = String(map_x,6);
