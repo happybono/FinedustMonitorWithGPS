@@ -40,7 +40,8 @@ Finedust monitoring device powered by NodeMCU with the location tracking capabil
 * D4 : Data
 
 ### KOKIRI A-PACK FIXIE 5 (KP-LS50) Portable Battery
-* Micro-USB : Power
+* USB Port : Power
+* Micro-USB : Charging Port
 * Dimension : W (62.3 mm) × D (112.0 mm) × H (13.0 mm)
 * Input : DC-5V / 2A
 * Output : DC-5V / 2.1A
