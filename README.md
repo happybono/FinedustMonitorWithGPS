@@ -60,5 +60,6 @@ Please install https://github.com/squix78/esp8266-oled-ssd1306
 
 ## What's New
 ### December 16 2019
-Read GPS data from ThingSpeak and displays it on the Google Maps using ESP12e NodeMCU and GPSNeo6M Module.
+[Read GPS data from ThingSpeak and displays it on the Google Maps using ESP12e NodeMCU and GPSNeo6M Module.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/GoogleMaps.html "FinedustMonitorWithGPS/Maps/GoogleMaps.html")
+
 
