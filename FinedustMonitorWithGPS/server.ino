@@ -24,7 +24,7 @@ void do_server_plaive(String api_key,int pm25, int pm10, float temperature, Stri
   //contentType= "application/x-www-form-urlencoded";
 
   //서버 통신 공식 client.println 을 사용하여야 합니다.
-  if(client.connect(host_plaive,httpPort)){
+  if(client.connect(host_plaive, httpPort)){
     Serial.println("connected");
     client.print("GET /insert.php?");
     client.print(data); 
@@ -46,13 +46,13 @@ void do_server_plaive(String api_key,int pm25, int pm10, float temperature, Stri
   }
 }
 
-void do_server_thingspeak(String api_key,int pm25, int pm10, float temperature, String map_x, String map_y) {
+void do_server_thingspeak(String api_key,int pm25, int pm10, float temperature, String map_x, String map_y, String status) {
 
-  data = "api_key="+ String(api_key) + "&field1=" + String(pm25) + "&field2=" + String(pm10) + "&field3=" + String(temperature) + "&field4=" + String(map_x) + "&field5=" + String(map_y);
+  data = "api_key=" + String(api_key) + "&field1=" + String(pm25) + "&field2=" + String(pm10) + "&field3=" + String(temperature) + "&field4=" + String(map_x) + "&field5=" + String(map_y) + "&status=" + String(status);
   //contentType= "application/x-www-form-urlencoded";
 
   //서버 통신 공식 client.println 을 사용하여야 합니다.
-  if(client.connect(host_thingspeak,httpPort)){
+  if(client.connect(host_thingspeak, httpPort)){
     Serial.println("connected");
     client.print("GET /update?");
     client.print(data); 
@@ -82,7 +82,7 @@ void do_server_default(String api_key,int pm25, int pm10, float temperature, Str
   contentType= "application/x-www-form-urlencoded";
 
   //서버 통신 공식 client.println 을 사용하여야 합니다.
-  if(client.connect(host_default,httpPort)){
+  if(client.connect(host_default, httpPort)){
     Serial.println("connected");
     client.print("GET /insert.php?");
     client.print(data); 
