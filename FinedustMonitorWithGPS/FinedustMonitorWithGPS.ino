@@ -102,7 +102,7 @@ void loop() {
         status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. The conditions ideal for outdoor activities.";
     }
 
-    else if (16 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) || 16 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 9){
+    else if (16 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 9 || 16 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 9){
           status = "Very Good (2) : The air pollution pose minimal risk to exposed persons. Conditions very good for outdoor activities.";
     }
 
