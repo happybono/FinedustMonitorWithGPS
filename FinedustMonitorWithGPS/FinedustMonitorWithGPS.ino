@@ -21,7 +21,7 @@ String api_key = "";
 
 boolean wifi_ready;
 float map_x, map_y;
-String s_map_x, s_map_y;
+String s_map_x, s_map_y, status;
 
 TinyGPSPlus gps;
 SoftwareSerial ss(12, 13);
