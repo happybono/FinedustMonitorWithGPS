@@ -3,6 +3,13 @@ Finedust monitoring device powered by NodeMCU with the location tracking capabil
   
 ![Final Product](20191126_082913.jpg)
 
+## What's New
+### December 16, 2019
+[Read GPS data from ThingSpeak and displays it on the Google Maps using ESP12e NodeMCU and GPSNeo6MV2 Module.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/GoogleMaps.html "FinedustMonitorWithGPS/Maps/GoogleMaps.html")
+
+### December 25, 2019
+[Now supports [Channel Status Updates] in ThingSpeak](https://thingspeak.com/channels/920137) : Updated [FinedustMonitorWithGPS.ino](https://github.com/happybono/FinedustMonitorWithGPS/commit/d16a94cb5be8606c114e715d08e058f9a735077a "FinedustMonitorWithGPS.ino"), [server.ino](https://github.com/happybono/FinedustMonitorWithGPS/commit/3c3a89e9d8a4e45f591379dc96e2e7b67e15914d "server.ino")
+
 ## Specifications
 ### Scenarios
 * Measuring the finedust contamination level in the air in a real time and display on the OLED Screen. 
@@ -59,9 +66,3 @@ Finedust monitoring device powered by NodeMCU with the location tracking capabil
 
 ## Drivers / References
 Please install https://github.com/squix78/esp8266-oled-ssd1306
-
-## What's New
-### December 16 2019
-[Read GPS data from ThingSpeak and displays it on the Google Maps using ESP12e NodeMCU and GPSNeo6MV2 Module.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/GoogleMaps.html "FinedustMonitorWithGPS/Maps/GoogleMaps.html")
-
-
