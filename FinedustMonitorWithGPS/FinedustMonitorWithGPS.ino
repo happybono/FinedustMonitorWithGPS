@@ -40,16 +40,15 @@ void got_dust(int pm25, int pm10) {                  //formula for dust sensor j
 void do_interval() {               
   if (wifi_ready){
 #ifdef PLAIVE_SERVER_ENABLE
-    do_server_plaive(api_key,int(pm25s.getMedian()), int(pm10s.getMedian()), get_temperature(), s_map_x, s_map_y);
+    do_server_plaive(api_key, int(pm25s.getMedian()), int(pm10s.getMedian()), get_temperature(), s_map_x, s_map_y);
 #else
   #ifdef THINGSPEAK_SERVER_ENABLE
-    do_server_thingspeak(api_key,int(pm25s.getMedian()), int(pm10s.getMedian()), get_temperature(), s_map_x, s_map_y);;
+    do_server_thingspeak(api_key, int(pm25s.getMedian()), int(pm10s.getMedian()), get_temperature(), s_map_x, s_map_y, status);
   #else
     do_server_default(api_key,int(pm25s.getMedian()), int(pm10s.getMedian()), get_temperature(), s_map_x, s_map_y);
   #endif
 #endif
-  } 
-                                                       //wifi is ok 
+  }                                                    //wifi is ok 
 }
 
 unsigned long mark = 0;
@@ -65,7 +64,7 @@ void setup() {
   
   if (!wifi_ready) nowifi_oled();                      //wifi no connection
   delay(5000);
-  Serial.println("\nDust Sensor Box V1.2, 2019/11/24 HappyBono");
+  Serial.println("\nFinedust Sensor Box V1.3, 2019/12/25 HappyBono");
 }
 
 //아두이노가 반복적으로 작동하는 부분 (Where Arduino works repeatedly.)
@@ -95,10 +94,39 @@ void loop() {
       yield(); 
     }
   }
-  while (dust.available() > 0) {
+  while (dust.available() > 0) { 
     do_dust(dust.read(), got_dust);
     yield();                                          //loop 에서 while 문을 사용하는 경우 yield 를 포함해주어야 합니다.
+
+    if (8 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 0 || 8 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 0){
+        status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. The conditions ideal for outdoor activities.";
+    }
+
+    else if (16 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) || 16 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 9){
+          status = "Very Good (2) : The air pollution pose minimal risk to exposed persons. Conditions very good for outdoor activities.";
+    }
+
+    else if (26 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 17 || 51 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 17){
+          status = "Good (3) : Air quality is acceptable. Air pollution can endanger people at risk. Conditions good for outdoor activities.";
+    }
+
+    else if (34 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 27 || 68 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 52){
+          status = "Satisfactory (4) : Air quality is average. The air pollution pose a threat for people at risk, which may experience health effects. Other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
+    }
+
+    else if (35 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 43 || 84 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 69){
+          status = "Bad (5) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
+    }
+    
+    else if (51 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 44 || 101 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 85){
+          status = "Very Bad (6) : Air quality is very bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
+    }
+
+    else if (60 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 52 || 120 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 102){
+          status = "Hazardous (7) : The quality of air is worst and dangerous. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
+    }
   }
+
   //Serial.println(map_x);
   //Serial.print("pm 25 : ");
   //Serial.println(int(pm25s.getMedian()));
