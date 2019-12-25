@@ -110,7 +110,7 @@ void loop() {
     else if (34 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 27) {
       pm25i = 4;
     }
-    else if (35 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 43) {
+    else if (43 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 35) {
       pm25i = 5;
     }
     else if (51 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 44) {
