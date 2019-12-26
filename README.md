@@ -18,7 +18,7 @@ Various bug fixes.
 * Measuring the finedust contamination level in the air in a real time and display on the OLED Screen. 
 * Measuring the current temperature.
 * Track & update devices' location in a realtime.
-* Read GPS data (longitude, latitude) from [ThingSpeak](https://thingspeak.com/channels/920137) and displays it on the Google Maps.
+* Read GPS data (longitude, latitude) from [ThingSpeak](https://thingspeak.com/channels/920137) and displays it on the [Google Maps](https://developers.google.com/maps/documentation/javascript/tutorial).
 * Refining data and synchronize with the web-based cloud service. (e.g. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/)) 
 
 ### Connections
