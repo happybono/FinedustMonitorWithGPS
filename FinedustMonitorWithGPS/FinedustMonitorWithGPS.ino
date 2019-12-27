@@ -159,10 +159,10 @@ void loop() {
         status = "Bad (5) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
       }
       else if (pm25i == 6) {
-        status = "Very Bad (6) : Air quality is very bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
+        status = "Severe (6) : Air quality is severe. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
       }
       else if (pm25i == 7) {
-        status = "Hazardous (7) : The quality of air is worst and dangerous. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
+        status = "Hazardous (7) : The quality of air is worst and dangerous. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are strongly discouraged.";
       }
     } else if (pm25i < pm10i) {
       if (pm10i == 1) {
@@ -181,10 +181,10 @@ void loop() {
         status = "Bad (5) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
       }
       else if (pm10i == 6) {
-        status = "Very Bad (6) : Air quality is very bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
+        status = "Severe (6) : Air quality is severe. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
       }
       else if (pm10i == 7) {
-        status = "Hazardous (7) : The quality of air is worst and dangerous. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
+        status = "Hazardous (7) : The quality of air is worst and dangerous. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are strongly discouraged.";
       }
     }
   }
