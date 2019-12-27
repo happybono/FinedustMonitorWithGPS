@@ -67,6 +67,7 @@ void setup() {
   Serial.println("\nFinedust Sensor Box V1.3, 2019/12/25 HappyBono");
 }
 
+int pm25i, pm10i;
 //아두이노가 반복적으로 작동하는 부분 (Where Arduino works repeatedly.)
 void loop() {
     if(ss.available()<=0){
