@@ -11,7 +11,7 @@ Finedust monitoring device powered by NodeMCU with the location tracking capabil
 [Now supports [Channel Status Updates] in ThingSpeak](https://thingspeak.com/channels/920137) : Updated [FinedustMonitorWithGPS.ino](https://github.com/happybono/FinedustMonitorWithGPS/commit/01367946fd2dc10b39b39dec19309892311e92ea "/FinedustMonitorWithGPS/FinedustMonitorWithGPS.ino"), [server.ino](https://github.com/happybono/FinedustMonitorWithGPS/commit/3c3a89e9d8a4e45f591379dc96e2e7b67e15914d "/FinedustMonitorWithGPS/server.ino")
 
 ### December 26, 2019
-[Various bug fixes.](https://github.com/happybono/FinedustMonitorWithGPS/commit/cd161aa42e29fb185dfe0b497ca3324ed7105a41)
+[Various bugs fixed.](https://github.com/happybono/FinedustMonitorWithGPS/commit/cd161aa42e29fb185dfe0b497ca3324ed7105a41)
 
 ## Specifications
 ### Scenarios
