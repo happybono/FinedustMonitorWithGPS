@@ -154,7 +154,7 @@ void loop() {
         status = "Satisfactory (3) : Air quality is average. The air pollution pose a threat for people at risk, which may experience health effects. Other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
       }
       else if (pm25i == 4) {
-        status = "Bad (4) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities."
+        status = "Not Good (4) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities."
       }
       else if (pm25i == 5) {
         status = "Bad (5) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
@@ -176,7 +176,7 @@ void loop() {
         status = "Satisfactory (3) : Air quality is average. The air pollution pose a threat for people at risk, which may experience health effects. Other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
       }
       else if (pm10i == 4) {
-        status = "Bad (4) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
+        status = "Not Good (4) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities."
       }
       else if (pm10i == 5) {
         status = "Bad (5) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
