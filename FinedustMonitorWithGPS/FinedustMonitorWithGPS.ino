@@ -143,49 +143,61 @@ void loop() {
       pm10i = 7;
     }
 
-    if (pm25i >= pm10i) {
+     if (pm25i >= pm10i) {
       if (pm25i == 1) {
         status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. The conditions ideal for outdoor activities.";
       }
+
       else if (pm25i == 2) {
         status = "Very Good (2) : The air pollution pose minimal risk to exposed persons. Conditions very good for outdoor activities.";
       }
+
       else if (pm25i == 3) {
-        status = "Satisfactory (3) : Air quality is average. The air pollution pose a threat for people at risk, which may experience health effects. Other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
+        status = "Moderate (3) : Air quality is acceptable. Air pollution can endanger people at risk. Conditions good for outdoor activities.";
       }
+
       else if (pm25i == 4) {
-        status = "Not Good (4) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities."
+        status = "Satisfactory (4) : Air quality is average. The air pollution pose a threat for people at risk, which may experience health effects. Other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
       }
+
       else if (pm25i == 5) {
         status = "Bad (5) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
       }
+
       else if (pm25i == 6) {
-        status = "Very Bad (6) : Air quality is very bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
+        status = "Severe (6) : Air quality is severe. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
       }
+
       else if (pm25i == 7) {
-        status = "Hazardous (7) : The quality of air is worst and dangerous. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
+        status = "Hazardous (7) : The quality of air is worst and dangerous. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are strongly discouraged.";
       }
     } else if (pm25i < pm10i) {
       if (pm10i == 1) {
         status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. The conditions ideal for outdoor activities.";
       }
+      
       else if (pm10i == 2) {
         status = "Very Good (2) : The air pollution pose minimal risk to exposed persons. Conditions very good for outdoor activities.";
       }
+
       else if (pm10i == 3) {
-        status = "Satisfactory (3) : Air quality is average. The air pollution pose a threat for people at risk, which may experience health effects. Other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
+        status = "Moderate (3) : Air quality is acceptable. Air pollution can endanger people at risk. Conditions good for outdoor activities.";
       }
+
       else if (pm10i == 4) {
-        status = "Not Good (4) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities."
+        status = "Satisfactory (4) : Air quality is average. The air pollution pose a threat for people at risk, which may experience health effects. Other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
       }
+
       else if (pm10i == 5) {
         status = "Bad (5) : Air quality is bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
       }
+
       else if (pm10i == 6) {
-        status = "Very Bad (6) : Air quality is very bad. People at risk should avoid to go outside. Not recommended for outdoor activities.";
+        status = "Severe (6) : Air quality is severe. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
       }
+
       else if (pm10i == 7) {
-        status = "Hazardous (7) : The quality of air is worst and dangerous. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
+        status = "Hazardous (7) : The quality of air is worst and dangerous. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are strongly discouraged.";
       }
     }
   }
