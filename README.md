@@ -1,10 +1,10 @@
 # FinedustMonitorWithGPS
 Finedust (air pollution) monitoring station. Air pollution monitoring channel updates once per every minutes with PM10.0, PM2.5 readings from Nova PM (SDS011) Sensor. Also includes real time location tracking capabilities with using the GY-NEO6MV2 GPS Sensor.
-  
-![Final Product](20191126_082913.jpg)
-
+ 
 >**[Please note]** <br>
 This project requires a GPS GY-NEO6MV2 GPS Sensor. For a project that does not require a GPS sensor, Please visit the following link : https://github.com/happybono/FinedustMonitor
+ 
+![Final Product](20191126_082913.jpg)
 
 ## What's New
 ### December 16, 2019
