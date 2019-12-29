@@ -153,7 +153,7 @@ void loop() {
       }
 
       else if (pm25i == 3) {
-        status = "Moderate (3) : Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.";
+        status = "Moderate (3) : Air quality is acceptable. however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.";
       }
 
       else if (pm25i == 4) {
@@ -161,7 +161,7 @@ void loop() {
       }
 
       else if (pm25i == 5) {
-        status = "Bad (5) : Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects. People at risk should avoid to go outside. Not recommended for outdoor activities.";
+        status = "Bad (5) : Everyone may begin to experience health effects, members of sensitive groups may experience more serious health effects. People at risk should avoid to go outside. Not recommended for outdoor activities.";
       }
 
       else if (pm25i == 6) {
@@ -181,7 +181,7 @@ void loop() {
       }
 
       else if (pm10i == 3) {
-        status = "Moderate (3) :  Air quality is acceptable; however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.";
+        status = "Moderate (3) :  Air quality is acceptable. however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.";
       }
 
       else if (pm10i == 4) {
@@ -189,7 +189,7 @@ void loop() {
       }
 
       else if (pm10i == 5) {
-        status = "Bad (5) : Everyone may begin to experience health effects; members of sensitive groups may experience more serious health effects. People at risk should avoid to go outside. Not recommended for outdoor activities.";
+        status = "Bad (5) : Everyone may begin to experience health effects, members of sensitive groups may experience more serious health effects. People at risk should avoid to go outside. Not recommended for outdoor activities.";
       }
 
       else if (pm10i == 6) {
