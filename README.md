@@ -3,7 +3,7 @@ Finedust monitoring device powered by NodeMCU with the location tracking capabil
   
 ![Final Product](20191126_082913.jpg)
 
->Please note <br>
+>**Please note** <br>
 This project requires a GPS GY-NEO6MV2 GPS Sensor. For a project that does not require a GPS sensor, Please visit the following link : https://github.com/happybono/FinedustMonitor
 
 ## What's New
