@@ -9,13 +9,13 @@
 #include <TinyGPS++.h>
 #include <SoftwareSerial.h>
 #include "RunningMedian.h"
- 
+
 RunningMedian pm25s = RunningMedian(19);
 RunningMedian pm10s = RunningMedian(19);
 
-char* ssid = "";   
-char* password = "";    
-String api_key = "";
+char* ssid = "HAPPYBONO-NOTE10+";
+char* password = "06020688";
+String api_key = "U32J015S4HOQ229E";
 //#define PLAIVE_SERVER_ENABLE
 #define THINGSPEAK_SERVER_ENABLE
 
@@ -99,13 +99,24 @@ void loop() {
     do_dust(dust.read(), got_dust);
     yield();                                          //loop 에서 while 문을 사용하는 경우 yield 를 포함해주어야 합니다.
 
-   
+
     /* AQI (실시간 대기질 지수) 등급 분류를 위한 코드입니다.
-       실시간 대기질 기준 수치는 국제 표준인 미국 대기질 수치 기준으로 계산하였습니다.
+       실시간 대기질 기준 수치는 국제 표준인 WHO 대기질 수치 기준으로 분류합니다.
+
+       http://www.euro.who.int/__data/assets/pdf_file/0005/78638/E90038.pdf
        https://airnow.gov/index.cfm?action=aqibasics.aqi */
-   
+
+       
     // 초미세먼지 AQI (실시간 대기질 지수) 등급을 분류합니다.
-    if (8 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 0) {
+    //   0 이상   8 이하 : 1
+    //   9 이상  16 이하 : 2
+    //  17 이상  26 이하 : 3
+    //  27 이상  34 이하 : 4
+    //  35 이상  43 이하 : 5
+    //  44 이상  51 이하 : 6
+    //  52 이상  ∞  이하 : 7
+
+    if (8 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 0) { 
       pm25i = 1;
     }
     else if (16 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 9) {
@@ -123,11 +134,20 @@ void loop() {
     else if (51 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 44) {
       pm25i = 6;
     }
-    else if (60 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 52) {
+    else if (int(pm25s.getMedian()) >= 52) {
       pm25i = 7;
     }
-   
+
+
     // 미세먼지 AQI (실시간 대기질 지수) 등급을 분류합니다.
+    //   0 이상   8 이하 : 1
+    //   9 이상  16 이하 : 2
+    //  17 이상  51 이하 : 3
+    //  52 이상  68 이하 : 4
+    //  69 이상  84 이하 : 5
+    //  85 이상 101 이하 : 6
+    // 102 이상  ∞  이하 : 7
+
     if (8 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 0) {
       pm10i = 1;
     }
@@ -146,17 +166,16 @@ void loop() {
     else if (101 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 85) {
       pm10i = 6;
     }
-    else if (120 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 102) {
+    else if (int(pm10s.getMedian()) >= 102) {
       pm10i = 7;
     }
 
-   
-     /* ThingSpeak 채널 내 Status Update (상태 업데이트) 영역에 표시되는 문구이므로, 
-        종합적인 정보 표현을 위해 초미세먼지와 미세먼지 등급을 비교 한 후
-        두 가지 중 높은 등급 기준으로 경고 혹은 권고메시지를 표시하도록 구현하였습니다. */
-   
-     // 분류된 초미세먼지 등급이 미세먼지 등급보다 높거나 같은 경우 아래와 같은 문구를 변수에 저장합니다.
-     if (pm25i >= pm10i) {
+    /* ThingSpeak 채널 내 Status Update (상태 업데이트) 영역에 표시되는 문구이므로,  
+        종합적인 정보 표현을 위해 초미세먼지와 미세먼지 등급을 비교 한 후 
+        두 가지 중 높은 등급 기준으로 경고 혹은 권고메시지를 표시합니다. */
+
+    // 분류된 초미세먼지 등급이 미세먼지 등급보다 같거나 높은 경우, 초미세먼지 등급을 기준으로 내용을 표시하기 위하여 아래의 문자열을 status 변수에 저장합니다. 
+    if (pm25i >= pm10i) {
       if (pm25i == 1) {
         status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. The conditions ideal for outdoor activities.";
       }
@@ -183,9 +202,9 @@ void loop() {
 
       else if (pm25i == 7) {
         status = "Hazardous (7) : Health warnings of emergency conditions. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are strongly discouraged.";
-      }      
-      
-     // 분류된 미세먼지 등급이 초미세먼지 등급보다 높은 경우 아래와 같은 문구를 변수에 저장합니다.
+      }
+
+    // 분류된 미세먼지 등급이 초미세먼지 등급보다 높은 경우, 미세먼지 등급을 기준으로 내용을 표시하기 위하여 아래의 문자열을 status 변수에 저장합니다.
     } else if (pm25i < pm10i) {
       if (pm10i == 1) {
         status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. The conditions ideal for outdoor activities.";
