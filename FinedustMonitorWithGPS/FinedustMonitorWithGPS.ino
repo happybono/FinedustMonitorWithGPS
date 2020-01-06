@@ -99,6 +99,12 @@ void loop() {
     do_dust(dust.read(), got_dust);
     yield();                                          //loop 에서 while 문을 사용하는 경우 yield 를 포함해주어야 합니다.
 
+   
+    /* AQI (실시간 대기질 지수) 등급 분류를 위한 코드입니다.
+       실시간 대기질 기준 수치는 국제 표준인 미국 대기질 수치 기준으로 계산하였습니다.
+       https://airnow.gov/index.cfm?action=aqibasics.aqi */
+   
+    // 초미세먼지 AQI (실시간 대기질 지수) 등급을 분류합니다.
     if (8 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 0) {
       pm25i = 1;
     }
@@ -120,7 +126,8 @@ void loop() {
     else if (60 >= int(pm25s.getMedian()) && int(pm25s.getMedian()) >= 52) {
       pm25i = 7;
     }
-
+   
+    // 미세먼지 AQI (실시간 대기질 지수) 등급을 분류합니다.
     if (8 >= int(pm10s.getMedian()) && int(pm10s.getMedian()) >= 0) {
       pm10i = 1;
     }
@@ -143,6 +150,12 @@ void loop() {
       pm10i = 7;
     }
 
+   
+     /* ThingSpeak 채널 내 Status Update (상태 업데이트) 영역에 표시되는 문구이므로, 
+        종합적인 정보 표현을 위해 초미세먼지와 미세먼지 등급을 비교 한 후
+        두 가지 중 높은 등급 기준으로 경고 혹은 권고메시지를 표시하도록 구현하였습니다. */
+   
+     // 분류된 초미세먼지 등급이 미세먼지 등급보다 높거나 같은 경우 아래와 같은 문구를 변수에 저장합니다.
      if (pm25i >= pm10i) {
       if (pm25i == 1) {
         status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. The conditions ideal for outdoor activities.";
@@ -170,7 +183,9 @@ void loop() {
 
       else if (pm25i == 7) {
         status = "Hazardous (7) : Health warnings of emergency conditions. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are strongly discouraged.";
-      }
+      }      
+      
+     // 분류된 미세먼지 등급이 초미세먼지 등급보다 높은 경우 아래와 같은 문구를 변수에 저장합니다.
     } else if (pm25i < pm10i) {
       if (pm10i == 1) {
         status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. The conditions ideal for outdoor activities.";
