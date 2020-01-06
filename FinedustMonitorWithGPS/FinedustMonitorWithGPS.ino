@@ -13,9 +13,9 @@
 RunningMedian pm25s = RunningMedian(19);
 RunningMedian pm10s = RunningMedian(19);
 
-char* ssid = "HAPPYBONO-NOTE10+";
-char* password = "06020688";
-String api_key = "U32J015S4HOQ229E";
+char* ssid = "";
+char* password = "";
+String api_key = "";
 //#define PLAIVE_SERVER_ENABLE
 #define THINGSPEAK_SERVER_ENABLE
 
