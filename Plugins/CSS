@@ -1,0 +1,14 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<style type="text/css">
+  body { background-color: #fff; }
+  #container { height: 100%; width: 100%; display: table; }
+  #inner { vertical-align: middle; display: table-cell; }
+  #header { margin:15; color:#9d9e9f; font-size: 1em; text-align: center; font-weight:bold; }
+  #pm25 { color:#2a3a4a; font-size: 1.35em; text-align: center; font-weight:bold; }
+  #pm10 { color:#2a3a4a; font-size: 1.35em; text-align: center; font-weight:bold; }
+  #temperature { color:#2a3a4a; font-size: 1.35em; text-align: center; font-weight:bold; }
+  #latitude { color:#2a3a4a; font-size: 1.35em; text-align: center; font-weight:bold; }
+  #longitude { color:#2a3a4a; font-size: 1.35em; text-align: center; font-weight:bold; }
+  #timestamp { color:#2a3a4a; font-size: 0.9em; text-align: center; font-weight:bold; }
+  #footer { margin:15; color:#9d9e9f; font-size: 0.7em; text-align: center; }
+</style>
