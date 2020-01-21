@@ -16,6 +16,13 @@ This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not requi
 ### December 29, 2019
 [Various bugs fixed.](https://github.com/happybono/FinedustMonitorWithGPS/commit/d6d25d7cf4dc4b91f174259ea1e473220ab79385)
 
+### January 20, 2020
+["Latest PM sensor readings" plugin added in ThingSpeak.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins)
+
+### January 21, 2020
+Displays additional information (temperature, longitude, latitude) in the "Latest PM sensor readings" plugin.<br>
+Various bugs fixed.
+
 ## Specifications
 ### Scenarios
 * Measuring the finedust contamination level in the air in a real time and display on the OLED Screen. 
