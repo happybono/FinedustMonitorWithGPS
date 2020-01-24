@@ -6,78 +6,83 @@
   <meta charset="utf-8">
   <style>
     /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+     * element that contains the map. */
     #map {
       height: 100%;
     }
 
-    /* Optional: Makes the sample page fill the window. */
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
+  /* Optional: Makes the sample page fill the window. */
+  html,
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+</style>
+<script src="https://maps.googleapis.com/maps/api/js?key=[Your Google Maps JavaScript API Key]"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+
+  var map;
+  var x;
+  var y;
+  var latlng;
+
+  function loadMap() {
+    $.getJSON("https://api.thingspeak.com/channels/920137/fields/4/last.json?api_key=[ThingSpeak Read API Key]", function (result) {
+      var m = result;
+      x = Number(m.field4);
+    });
+    $.getJSON("https://api.thingspeak.com/channels/920137/fields/5/last.json?api_key=[ThingSpeak Read API Key]", function (result) {
+      var m = result;
+      y = Number(m.field5);
+    }).done(function () {
+      initMap();
+    });
+  }
+
+  window.setInterval(function () { loadMap(); }, 15000);
+
+  function initMap() {
+    latlng = { lat: x, lng: y }
+    var mapOptions = {
+      zoom: 18,
+      center: latlng
     }
-  </style>
-  <script src="https://maps.googleapis.com/maps/api/js?key=[Your Google Maps JavaScript API Key]"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script>
+    var map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-    var map;
-    var x;
-    function loadmaps() {
-      $.getJSON("https://api.thingspeak.com/channels/920137/fields/4/last.json?api_key=[ThingSpeak Read API Key]", function (result) {
+    var geocoder = new google.maps.Geocoder;
+    var infowindow = new google.maps.InfoWindow;
+    geocodeLatLng(geocoder, map, infowindow)
+  }
 
-        var m = result;
-        x = Number(m.field4);
-        //alert(x);
-
-      });
-      $.getJSON("https://api.thingspeak.com/channels/920137/fields/5/last.json?api_key=[ThingSpeak Read API Key]", function (result) {
-
-        var m = result;
-        y = Number(m.field5);
-
-
-      }).done(function () {
-
-        initialize();
-      });
-    }
-
-    window.setInterval(function () {
-      loadmaps();
-    }, 60000);
-
-    function initialize() {
-      //alert(y);
-      var mapOptions = {
-        zoom: 18,
-        center: { lat: x, lng: y }
-      };
-      map = new google.maps.Map(document.getElementById('map'),
-        mapOptions);
-
-      var marker = new google.maps.Marker({
-        position: { lat: x, lng: y },
-        map: map
-      });
-
-      var infowindow = new google.maps.InfoWindow({
-        content: '<p>Marker Location:' + marker.getPosition() + '</p>'
-      });
-
-      google.maps.event.addListener(marker, 'click', function () {
-        infowindow.open(map, marker);
-      });
-    }
-
-    google.maps.event.addDomListener(window, 'load', initialize);
-  </script>
+  function geocodeLatLng(geocoder, map, infowindow) {
+    //var input = document.getElementById('latlng').value;
+    //var latlngStr = input.split(',', 2);
+    //var latlng = {lat: parseFloat(latlngStr[0]), lng: parseFloat(latlngStr[1])};
+    geocoder.geocode({ 'location': latlng }, function (results, status) {
+      if (status === 'OK') {
+        if (results[0]) {
+          //map.setZoom(11);
+          var marker = new google.maps.Marker({
+            position: latlng,
+            map: map
+          });
+          infowindow.setContent(results[0].formatted_address);
+          infowindow.open(map, marker);
+        } else {
+          window.alert('No results found');
+        }
+      } else {
+        window.alert('Geocoder failed due to: ' + status);
+      }
+    });
+  }
+</script>
+  
 </head>
 
-<body>
+<body onload='loadMap()'>
   <div id="map"></div>
 </body>
-
 </html>
