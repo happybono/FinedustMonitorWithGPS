@@ -2,9 +2,9 @@
 <script type='text/javascript' src='https://www.google.com/jsapi'></script>
 <script type='text/javascript'>
   // set your channel id here
-  var channel_id = XXXXXX;
+  var channel_id = [ThingSpeak Channel ID];
   // set your channel's read api key here if necessary
-  var api_key = '';
+  var api_key = '[ThingSpeak Read API Key]';
 
   // load the data
   function loadData() {
