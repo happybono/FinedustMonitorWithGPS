@@ -68,7 +68,19 @@
 							position: latlng,
 							map: map
 						});
-						infowindow.setContent(results[0].formatted_address);
+						
+						/* results[0].formatted_address: "277 Bedford Ave, Brooklyn, NY 11211, USA"
+						   results[1].formatted_address: "Grand St/Bedford Av, Brooklyn, NY 11211, USA"
+						   results[2].formatted_address: "Williamsburg, Brooklyn, NY, USA"
+						   results[3].formatted_address: "Brooklyn, NY, USA"
+						   results[4].formatted_address: "New York, NY, USA"
+						   results[5].formatted_address: "Brooklyn, NY 11211, USA"
+						   results[6].formatted_address: "Kings County, NY, USA"
+						   results[7].formatted_address: "New York-Northern New Jersey-Long Island, NY-NJ-PA, USA"
+						   results[8].formatted_address: "New York Metropolitan Area, USA"
+						   results[9].formatted_address: "New York, USA" */
+						
+						infowindow.setContent(results[0].formatted_address);						
 						infowindow.open(map, marker);
 					} else {
 						window.alert('No results found');
