@@ -10,7 +10,7 @@ Public Const gstrGeocodingURL = "/maps/api/geocode/xml?"
 Public Const gintType = 0
 
 ' key for Enterprise Geocoder or API Premium Plan or free-ish geocoder
-Public Const gstrKey = "AIzaSyCyJ9N__xACR12PD91M40csi03bfgNEpK8"
+Public Const gstrKey = "[Your Google Maps JavaScript API Key]"
 
 ' clientID for Enterprise Geocoder
 Public Const gstrClientID = ""
