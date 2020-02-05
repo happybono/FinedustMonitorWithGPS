@@ -1,3 +1,12 @@
+//
+//    FILE: ReverseGeocoding.vb
+//  AUTHOR: Jaewoong Mun (happybono@outlook.com)
+// CREATED: February 05, 2020
+//
+// Released to the public domain
+//
+
+
 Option Explicit
 
 ' Domain and URL for Google API
