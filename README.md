@@ -43,7 +43,7 @@ Various bugs fixed.
 
 ## Specifications
 ### Scenarios
-* Measuring the finedust contamination level in the air in a real time and display on the OLED Screen. 
+* Measuring the finedust contamination level in the air in a real time and displays value per every seconds on the OLED Screen.
 * Measuring the current temperature.
 * Track & update devices' location in a realtime.
 * Read GPS data (longitude, latitude) from [ThingSpeak](https://thingspeak.com/channels/920137) and displays it on the [Google Maps](https://www.google.com/maps/) using the [Javascript API](https://developers.google.com/maps/documentation/javascript/tutorial).
