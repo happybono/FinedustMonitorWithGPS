@@ -9,7 +9,7 @@
 
 Option Explicit
 
-' Domain and URL for Google Geocoding API
+' domain and URL for Google Geocoding API
 Public Const gstrGeocodingDomain = "https://maps.googleapis.com"
 Public Const gstrGeocodingURL = "/maps/api/geocode/xml?"
 
@@ -41,7 +41,7 @@ Public Function AddressGeocode(address As String) As String
 
     strAddress = URLEncode(address)
 
-    'Assemble the query string
+    'assemble the query string
     strQuery = gstrGeocodingURL
     strQuery = strQuery & "address=" & strAddress
 
@@ -62,7 +62,7 @@ Public Function AddressGeocode(address As String) As String
 
     Sleep (5)
 
-    'create HTTP request to query URL - make sure to have
+    'make sure to have create HTTP request to query URL 
     googleService.Open "GET", gstrGeocodingDomain & strQuery, False
     googleService.send
     googleResult.LoadXML (googleService.responseText)
@@ -120,7 +120,7 @@ Public Function ReverseGeocode(lat As String, lng As String) As String
     strLat = URLEncode(lat)
     strLng = URLEncode(lng)
 
-    'Assemble the query string
+    'assembles the query string
     strQuery = gstrGeocodingURL
     strQuery = strQuery & "latlng=" & strLat & "," & strLng
     
