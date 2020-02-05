@@ -90,5 +90,8 @@ Various bugs fixed.
 * Plaive (https://plaive.10make.com/)
 ![Plaive Screenshot](Plaive.png)
 
-## Drivers / References
+## Drivers
 Please install https://github.com/squix78/esp8266-oled-ssd1306
+
+## References / Bibliography
+* Christos Samaras. “Geocoding & Reverse Geocoding Functions In Google Sheets.” My Engineering World, Christos Samaras, 27 Aug. 2018, [myengineeringworld.net/2018/08/geocoding-reverse-gas.html](myengineeringworld.net/2018/08/geocoding-reverse-gas.html). Accessed 5 Feb. 2020.
