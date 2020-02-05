@@ -151,3 +151,4 @@ function getAddress(lat, long)
   return address;
 }
  
+/* End of the GAS code. */
