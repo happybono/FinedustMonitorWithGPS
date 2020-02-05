@@ -12,8 +12,8 @@ Public Const gintType = 0
 ' key for Enterprise Geocoder or API Premium Plan or free-ish geocoder
 Public Const gstrKey = "[Your Google Maps JavaScript API Key]"
 
-' clientID for Enterprise Geocoder
-Public Const gstrClientID = ""
+' clientID for Enterprise Geocoder (if applicable)
+Public Const gstrClientID = "[Your Google Maps ClientID]"
 
 ' kludge to not overdo the API calls and add a delay
 #If VBA7 Then
