@@ -1,3 +1,16 @@
+/* Start of the GAS code. */
+ 
+/*
+  -------------------------------------------------------------------------------
+  The next set of functions are used to perform geocoding and reverse geocoding.
+  
+  Written By:    Christos Samaras
+  Date:          18/08/2018
+  E-mail:        xristos.samaras@gmail.com
+  Site:          https://www.myengineeringworld.net
+  -------------------------------------------------------------------------------
+*/
+  
 /**
 * This function returns the latitude and longitude of a given address using the Geocoder class. 
 *
