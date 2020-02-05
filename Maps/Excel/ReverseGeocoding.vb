@@ -13,9 +13,9 @@ Option Explicit
 Public Const gstrGeocodingDomain = "https://maps.googleapis.com"
 Public Const gstrGeocodingURL = "/maps/api/geocode/xml?"
 
-' set gintType = 1 to use the Enterprise Geocoder (requires clientID and key)
-' set gintType = 2 to use the API Premium Plan (requires key)
-' leave gintType = 0 to use the free-ish Google geocoder (now requires a key! see https://developers.google.com/maps/documentation/geocoding/get-api-key)
+' set gintType = 1 to use the Enterprise Geocoder (requires clientID and Google Maps JavaScript API Key)
+' set gintType = 2 to use the API Premium Plan (requires Google Maps JavaScript API Key)
+' leave gintType = 0 to use the free-ish Google geocoder (requires Google Maps JavaScript API Key! see https://developers.google.com/maps/documentation/geocoding/get-api-key)
 Public Const gintType = 0
 
 ' key for Enterprise Geocoder or API Premium Plan or free-ish geocoder
