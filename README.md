@@ -7,6 +7,7 @@ This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not requi
 ![Final Product](20191126_082913.jpg)
 
 ## What's New
+### 
 ### December 16, 2019
 [Read GPS data from ThingSpeak and displays it on the Google Maps using ESP12e NodeMCU and GPSNeo6MV2 Module.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/GoogleMaps.html "FinedustMonitorWithGPS/Maps/GoogleMaps.html")
 
@@ -94,4 +95,6 @@ Various bugs fixed.
 Please install https://github.com/squix78/esp8266-oled-ssd1306
 
 ## References / Bibliography
-* Christos Samaras. “Geocoding & Reverse Geocoding Functions In Google Sheets.” My Engineering World, Christos Samaras, 27 Aug. 2018, [myengineeringworld.net/2018/08/geocoding-reverse-gas.html](myengineeringworld.net/2018/08/geocoding-reverse-gas.html). Accessed 5 Feb. 2020.
+* Christos Samaras 2018, Geocoding & Reverse Geocoding Functions In Google Sheets, My Engineering World, Christos Samaras, viewed 5 February 2020, <https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html>.
+
+* ThingPulse 2020, ThingPulse/esp8266-oled-ssd1306, GitHub, viewed 24 November 2019, <https://github.com/ThingPulse/esp8266-oled-ssd1306>.
