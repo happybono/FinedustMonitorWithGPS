@@ -9,17 +9,17 @@
 
 Option Explicit
 
-' Domain and URL for Google API
+' Domain and URL for Google Geocoding API
 Public Const gstrGeocodingDomain = "https://maps.googleapis.com"
 Public Const gstrGeocodingURL = "/maps/api/geocode/xml?"
 
-' set gintType = 1 to use the Enterprise Geocoder (requires clientID and Google Maps JavaScript API Key)
-' set gintType = 2 to use the API Premium Plan (requires Google Maps JavaScript API Key)
-' leave gintType = 0 to use the free-ish Google geocoder (requires Google Maps JavaScript API Key! see https://developers.google.com/maps/documentation/geocoding/get-api-key)
+' set gintType = 1 to use the Enterprise Geocoder (requires clientID and Google Maps Geocoding API Key)
+' set gintType = 2 to use the API Premium Plan (requires Google Maps Geocoding API Key)
+' leave gintType = 0 to use the free-ish Google geocoder (requires Google Maps Geocoding API Key! see https://developers.google.com/maps/documentation/geocoding/get-api-key)
 Public Const gintType = 0
 
 ' key for Enterprise Geocoder or API Premium Plan or free-ish geocoder
-Public Const gstrKey = "[Your Google Maps JavaScript API Key]"
+Public Const gstrKey = "[Your Google Maps Geocoding API Key]"
 
 ' clientID for Enterprise Geocoder (if applicable)
 Public Const gstrClientID = "[Your Google Maps ClientID]"
@@ -45,7 +45,7 @@ Public Function AddressGeocode(address As String) As String
     strQuery = gstrGeocodingURL
     strQuery = strQuery & "address=" & strAddress
 
-    If gintType = 0 Then ' free-ish Google Geocoder - now requires an API key!
+    If gintType = 0 Then ' free-ish Google Geocoder - required an API key!
         strQuery = strQuery & "&key=" & gstrKey
     ElseIf gintType = 1 Then ' Enterprise Geocoder
         strQuery = strQuery & "&client=" & gstrClientID
@@ -77,7 +77,7 @@ Public Function AddressGeocode(address As String) As String
             AddressGeocode = strLatitude & "," & strLongitude
         Next oNode
     Else
-        AddressGeocode = "Not Found (try again, you may have done too many too fast)"
+                AddressGeocode = "Not Found (You may have reached your daily limit. Please check your daily quota and try again.)"
     End If
 End Function
 
@@ -124,7 +124,7 @@ Public Function ReverseGeocode(lat As String, lng As String) As String
     strQuery = gstrGeocodingURL
     strQuery = strQuery & "latlng=" & strLat & "," & strLng
     
-    If gintType = 0 Then ' free-ish Google Geocoder - now requires an API key!
+    If gintType = 0 Then ' free-ish Google Geocoder - required an API key!
         strQuery = strQuery & "&key=" & gstrKey
     ElseIf gintType = 1 Then ' Enterprise Geocoder
         strQuery = strQuery & "&client=" & gstrClientID
@@ -151,7 +151,7 @@ Public Function ReverseGeocode(lat As String, lng As String) As String
     If oNodes.Length > 0 Then
         ReverseGeocode = oNodes.Item(0).Text
     Else
-        ReverseGeocode = "Not Found (try again, you may have done too many too fast)"
+        ReverseGeocode = "Not Found (You may have reached your daily limit. Please check your daily quota and try again.)"
     End If
 End Function
 
