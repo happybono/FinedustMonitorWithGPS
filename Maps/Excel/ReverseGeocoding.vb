@@ -77,7 +77,7 @@ Public Function AddressGeocode(address As String) As String
             AddressGeocode = strLatitude & "," & strLongitude
         Next oNode
     Else
-                AddressGeocode = "Not Found (You may have reached your daily limit. Please check your daily quota and try again.)"
+        AddressGeocode = "Not Found (You may have reached your daily limit. Please check your daily quota and try again.)"
     End If
 End Function
 
