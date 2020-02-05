@@ -48,7 +48,7 @@ Various bugs fixed.
 * Track & update devices' location in a realtime.
 * Read GPS data (longitude, latitude) from [ThingSpeak](https://thingspeak.com/channels/920137) and displays it on the [Google Maps](https://www.google.com/maps/) using the [Javascript API](https://developers.google.com/maps/documentation/javascript/tutorial).
 * Refining data and synchronize with the web-based cloud service. (e.g. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/)) 
-* Performs reverse geocoding to retrieve addresses those measured
+* Performs reverse geocoding to convert location (latitude, longitude) which device has measured to a readable address.
 
 ### Connections
 * 1 x Micro-USB
