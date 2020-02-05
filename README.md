@@ -36,8 +36,8 @@ Various bugs fixed.
 
 ### February 05, 2020
 [Added VBA (Visual Basic for Applications) code for reverse geocoding support in Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb)<br>
-[Added Javascript code for reverse geocoding support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheets.gs) ([ⓒ Christos Samaras 2018](https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html))<br>
-[Added Javascript code for reverse geocoding macro support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheetsGeocodingMacro.gs) ([ⓒ Max Vilimpoc](https://github.com/nuket/google-sheets-geocoding-macro))
+[Added Javascript code for reverse geocoding support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheets.gs) ([ⓒ 2018 Christos Samaras](https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html))<br>
+[Added Javascript code for reverse geocoding macro support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheetsGeocodingMacro.gs) ([ⓒ 2016 - 2017 Max Vilimpoc](https://github.com/nuket/google-sheets-geocoding-macro))
 
 ## Specifications
 ### Scenarios
