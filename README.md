@@ -7,7 +7,9 @@ This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not requi
 ![Final Product](20191126_082913.jpg)
 
 ## What's New
-### 
+### November 24, 2019
+(Initial Release.)[https://github.com/happybono/FinedustMonitorWithGPS/commit/aa9cbf7b85308d91ce775d71c36cdd96b5740529]
+
 ### December 16, 2019
 [Read GPS data from ThingSpeak and displays it on the Google Maps using ESP12e NodeMCU and GPSNeo6MV2 Module.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/GoogleMaps.html "FinedustMonitorWithGPS/Maps/GoogleMaps.html")
 
@@ -46,6 +48,7 @@ Various bugs fixed.
 * Track & update devices' location in a realtime.
 * Read GPS data (longitude, latitude) from [ThingSpeak](https://thingspeak.com/channels/920137) and displays it on the [Google Maps](https://www.google.com/maps/) using the [Javascript API](https://developers.google.com/maps/documentation/javascript/tutorial).
 * Refining data and synchronize with the web-based cloud service. (e.g. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/)) 
+* Performs reverse geocoding to retrieve addresses those measured
 
 ### Connections
 * 1 x Micro-USB
