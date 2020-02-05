@@ -33,6 +33,9 @@ Various bugs fixed.
 ### Jaunary 25, 2020
 [Added an onclick event to displayed marker in Google Maps.](https://github.com/happybono/FinedustMonitorWithGPS/blob/95abbb8ae55be63581fe9892d7d798f0c71eb8e6/Maps/GoogleMaps.html#L80)
 
+### February 05, 2020
+[Added VBA (Visual Basic for Applications) code for reverse geocoding support in Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Maps/Excel)
+
 ## Specifications
 ### Scenarios
 * Measuring the finedust contamination level in the air in a real time and display on the OLED Screen. 
