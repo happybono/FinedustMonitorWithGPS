@@ -36,7 +36,8 @@ Various bugs fixed.
 
 ### February 05, 2020
 [Added VBA (Visual Basic for Applications) code for reverse geocoding support in Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb)<br>
-[Added Javascript code for reverse geocoding support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheets.js) ([ⓒ Christos Samaras 2018](https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html))
+[Added Javascript code for reverse geocoding support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheets.js) ([ⓒ Christos Samaras 2018](https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html))<br>
+[Added Javascript code for reverse geocoding macro support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheetsGeocodingMacro.gs) ([ⓒ Max Vilimpoc](https://github.com/nuket/google-sheets-geocoding-macro))
 
 ## Specifications
 ### Scenarios
@@ -97,5 +98,5 @@ Please install https://github.com/squix78/esp8266-oled-ssd1306
 
 ## References / Bibliography
 * Christos Samaras 2018, Geocoding & Reverse Geocoding Functions In Google Sheets, My Engineering World, Christos Samaras, viewed 5 February 2020, <https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html>.
-
+* Nuket 2019, nuket/google-sheets-geocoding-macro, GitHub, viewed 5 February 2020, <https://github.com/nuket/google-sheets-geocoding-macro>.
 * ThingPulse 2020, ThingPulse/esp8266-oled-ssd1306, GitHub, viewed 24 November 2019, <https://github.com/ThingPulse/esp8266-oled-ssd1306>.
