@@ -33,7 +33,7 @@ Various bugs fixed.
 #### What is Reverse Geocoding?
 >Reverse geocoding is the process of back (reverse) coding of a point location (latitude, longitude) to a readable address or place name. This permits the identification of nearby street addresses, places, and/or areal subdivisions such as neighbourhoods, county, state, or country.
 
-[More information on reverse geocoding with Google Maps JavaScript API](https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/examples/geocoding-reverse?fbclid=IwAR0UUWZSBd26wr4xeQWFMVwoLhHZiNoVgWJiLioRvJXlZkPapykpM2uBf6U)
+[More information on reverse geocoding with Google Maps JavaScript API](https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding)
 
 ### Jaunary 25, 2020
 [Added an onclick event to displayed marker in Google Maps.](https://github.com/happybono/FinedustMonitorWithGPS/blob/95abbb8ae55be63581fe9892d7d798f0c71eb8e6/Maps/GoogleMaps.html#L80)
