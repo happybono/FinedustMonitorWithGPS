@@ -49,7 +49,7 @@ Various bugs fixed.
 * Measuring the current temperature.
 * Track and update device location in a real time.
 * Reading GPS data (longitude, latitude) from [ThingSpeak](https://thingspeak.com/channels/920137) and display it using [Google Maps](https://www.google.com/maps/) with the [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial).
-* Refining data and synchronise with the web-based cloud service. (i.e. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/))
+* Refining data and synchronize with the web-based cloud service. (i.e. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/))
 * Using reverse geocoding to convert a location (latitude, longitude) measured by the device to a readable address.
 
 ### Connections
