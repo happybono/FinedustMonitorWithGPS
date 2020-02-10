@@ -33,7 +33,7 @@ Public Const gstrClientID = "[Your Google Maps ClientID]"
 #End If
 
 
-Public Function AddressGeocode(address As String) As String
+Public Function ADDRGEOCODE(address As String) As String
     Dim strAddress As String
     Dim strQuery As String
     Dim strLatitude As String
@@ -75,10 +75,10 @@ Public Function AddressGeocode(address As String) As String
             Debug.Print oNode.Text
             strLatitude = oNode.ChildNodes(0).ChildNodes(0).Text
             strLongitude = oNode.ChildNodes(0).ChildNodes(1).Text
-            AddressGeocode = strLatitude & "," & strLongitude
+            ADDRGEOCODE = strLatitude & "," & strLongitude
         Next oNode
     Else
-        AddressGeocode = "Not Found (You may have reached your daily limit. Please check your daily quota and try again.)"
+        ADDRGEOCODE = "Not Found (You may have reached your daily limit. Please check your daily quota and try again.)"
     End If
 End Function
 
@@ -110,7 +110,7 @@ Public Function URLEncode(StringToEncode As String, Optional _
 End Function
 
 
-Public Function ReverseGeocode(lat As String, lng As String) As String
+Public Function REVSGEOCODE(lat As String, lng As String) As String
     Dim strAddress As String
     Dim strLat As String
     Dim strLng As String
@@ -150,9 +150,9 @@ Public Function ReverseGeocode(lat As String, lng As String) As String
     Set oNodes = googleResult.getElementsByTagName("formatted_address")
   
     If oNodes.Length > 0 Then
-        ReverseGeocode = oNodes.Item(0).Text
+        REVSGEOCODE = oNodes.Item(0).Text
     Else
-        ReverseGeocode = "Not Found (You may have reached your daily limit. Please check your daily quota and try again.)"
+        REVSGEOCODE = "Not Found (You may have reached your daily limit. Please check your daily quota and try again.)"
     End If
 End Function
 
