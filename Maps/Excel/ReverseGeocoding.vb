@@ -15,7 +15,8 @@ Public Const gstrGeocodingURL = "/maps/api/geocode/xml?"
 
 ' set gintType = 1 to use the Enterprise Geocoder (requires clientID and Google Maps Geocoding API Key)
 ' set gintType = 2 to use the API Premium Plan (requires Google Maps Geocoding API Key)
-' leave gintType = 0 to use the free-ish Google geocoder (requires Google Maps Geocoding API Key! see https://developers.google.com/maps/documentation/geocoding/get-api-key)
+' leave gintType = 0 to use the free-ish Google geocoder (requires Google Maps Geocoding API Key! 
+' see https://developers.google.com/maps/documentation/geocoding/get-api-key)
 Public Const gintType = 0
 
 ' key for Enterprise Geocoder or API Premium Plan or free-ish geocoder
