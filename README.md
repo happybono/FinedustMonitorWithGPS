@@ -35,10 +35,10 @@ This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not requi
 
 ### February 05, 2020
 >[Added VBA (Visual Basic for Applications) code for reverse geocoding support in Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb)<br>
-<img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/powered_by_msexcel_on_white.png" alt="Powered by MSExcel logo" width="217"/><br><br>
+><img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/powered_by_msexcel_on_white.png" alt="Powered by MSExcel logo" width="217"/><br><br>
 >[Added Javascript (.gs) code for reverse geocoding support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheets.gs) ([ⓒ 2018 Christos Samaras](https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html))<br>
 >[Added Javascript (.gs) code for reverse geocoding macro support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheetsGeocodingMacro.gs) ([ⓒ 2016 - 2017 Max Vilimpoc](https://github.com/nuket/google-sheets-geocoding-macro))<br>
-<img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/powered_by_google_on_white.png" alt="Powered by Google logo" width="150"/>
+><img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/powered_by_google_on_white.png" alt="Powered by Google logo" width="150"/>
 
 ## Specifications
 ### Scenarios
