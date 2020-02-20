@@ -43,6 +43,9 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 ### February 19, 2020
 > [Optimized performance for data processing.](https://thingspeak.com/channels/976688/api_keys)
 
+### February 20, 2020
+> ["Email Alert" function added as ThingSpeak Analysis plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Plugins/Email/EmailNotifier.m) 
+
 ## Specifications
 ### Scenarios
 * Measuring the fine dust contamination level in the air in real time. The value is displayed on the OLED Screen, and updated every second.
