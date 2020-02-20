@@ -26,4 +26,4 @@ plot(x, y, 'r.', 'MarkerSize', 10)
 plot(x(end), y(end), 'ro', 'MarkerSize', 10) 
 hold off 
 axis equal 
-axis([325 719 84 395]) 
+axis([325 719 84 395])
