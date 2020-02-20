@@ -44,7 +44,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 > [Optimized performance for data processing.](https://thingspeak.com/channels/976688/api_keys)
 
 ### February 20, 2020
-> ["Email Alert" function added as ThingSpeak Analysis plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Plugins/Email/EmailNotifier.m) 
+> ["Email Alert" function added as a ThingSpeak Analysis plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Plugins/Email/EmailNotifier.m) 
 
 ## Specifications
 ### Scenarios
