@@ -1,4 +1,4 @@
-data = thingSpeakRead([Your ThingSpeak Channel ID],"NumMinutes", 60);
+data = thingSpeakRead([Your ThingSpeak Channel ID], "NumMinutes", 60);
 dust25 = mean(data(:, 1));
 dust10 = mean(data(:, 2));
 
