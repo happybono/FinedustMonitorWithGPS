@@ -114,5 +114,5 @@ Please install https://github.com/squix78/esp8266-oled-ssd1306
 ## References
 * Christos Samaras 2018, Geocoding & Reverse Geocoding Functions In Google Sheets, My Engineering World, Christos Samaras, viewed 5 February 2020, <https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html>.
 * Max Vilimpoc 2019, nuket/google-sheets-geocoding-macro, GitHub, Nuket. viewed 5 February 2020, <https://github.com/nuket/google-sheets-geocoding-macro>.
-* Tillaart, Rob 2018, RobTillaart/Arduino, GitHub, RobTillaart, viewed 23 February 2020, <https://github.com/RobTillaart/Arduino/blob/master/libraries/RunningMedian/RunningMedian.cpp>.
 * ThingPulse 2020, ThingPulse/esp8266-oled-ssd1306, GitHub, ThingPulse, viewed 24 November 2019, <https://github.com/ThingPulse/esp8266-oled-ssd1306>.
+* Tillaart, Rob 2018, RobTillaart/Arduino, GitHub, RobTillaart, viewed 23 February 2020, <https://github.com/RobTillaart/Arduino/blob/master/libraries/RunningMedian/RunningMedian.cpp>.
