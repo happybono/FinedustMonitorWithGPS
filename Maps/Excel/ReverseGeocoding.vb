@@ -75,7 +75,7 @@ Public Function ADDRGEOCODE(address As String) As String
             Debug.Print oNode.Text
             strLatitude = oNode.ChildNodes(0).ChildNodes(0).Text
             strLongitude = oNode.ChildNodes(0).ChildNodes(1).Text
-            ADDRGEOCODE = strLatitude & "," & strLongitude
+            ADDRGEOCODE = strLatitude & "," & " " & strLongitude
         Next oNode
     Else
         ADDRGEOCODE = "Not Found (You may have reached your daily limit. Please check your daily quota and try again.)"
