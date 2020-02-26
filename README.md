@@ -62,6 +62,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 * Reading GPS data (longitude, latitude) from [ThingSpeak](https://thingspeak.com/channels/920137) and display it using [Google Maps](https://www.google.com/maps/) with the [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial).
 * Refining data and synchronize with the web-based cloud service. (i.e. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/))
 * Using reverse geocoding to convert a location (latitude, longitude) measured by the device to a readable address.
+* Using Microsoft Excel to process batch of locations (latitude, longitude). Data can be exported in CSV format from ThingSpeak to open in Excel.
 
 #### What is Reverse Geocoding?
 >Reverse geocoding is the process of back (reverse) coding of a point location (latitude, longitude) to a readable address or place name. This permits the identification of nearby street addresses, places, and/or areal subdivisions such as neighbourhoods, county, state, or country.
