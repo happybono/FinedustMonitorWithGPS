@@ -51,7 +51,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 > <img src="https://hhqeaw.bn.files.1drv.com/y4mVWGrpst4-2OO8rwynsi1_H3b-qPigtQIiH16Cq7g-Ze2_QD7pxKDTs576jvyGPvxjdt0O3bAOx-kDQQVYCnoelRbqQV-J-PLFxDaPvg00grYODQeX3w1UjtN3U2KZuQuVIA4lpenIL7Fpx05Sfb44aQfxut1O6YwE8NVsHQ-oedt-U89gkcwORtRLWdyw5f-OhGEz3D8LJvPouOylvNWlg??width=251&height=356&cropmode=none" alt="QRCode"/>
 
 ### February 26, 2020
-> [Supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in the ReverseGeocoding.vb](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb)
+> [Supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in the ReverseGeocoding.vb](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb#L86)
 
 ## Specifications
 ### Scenarios
