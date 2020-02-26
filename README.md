@@ -50,6 +50,9 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 > [Generated a QR code for faster and more convenient access to the ThingSpeak dashboard.](https://camo.githubusercontent.com/73143c13b7e99572346cd75ab1d010d677786862/68747470733a2f2f6868716561772e626e2e66696c65732e316472762e636f6d2f79346d7050454a62504a63593074416c6777342d4533326c74464e36455576317044554a666557756670434b594a7446663662464a3159427274797a7a37317335656444334f795a49326f5657385557524c624d45656d68634e484f31507976795349587276486b434e34644678482d647a776e6c41596f6e676a477578496d467468797163646557585f7479457574506c3153464233727332436c5f472d456f566b6a6148636458734e364c75566c4c3659357641523650537a536c663359503635567838416b42616641457a4e4e42504142534a6277773f77696474683d323531266865696768743d333536) <br><br>
 > <img src="https://hhqeaw.bn.files.1drv.com/y4mVWGrpst4-2OO8rwynsi1_H3b-qPigtQIiH16Cq7g-Ze2_QD7pxKDTs576jvyGPvxjdt0O3bAOx-kDQQVYCnoelRbqQV-J-PLFxDaPvg00grYODQeX3w1UjtN3U2KZuQuVIA4lpenIL7Fpx05Sfb44aQfxut1O6YwE8NVsHQ-oedt-U89gkcwORtRLWdyw5f-OhGEz3D8LJvPouOylvNWlg??width=251&height=356&cropmode=none" alt="QRCode"/>
 
+### February 26, 2020
+> [Supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in the ReverseGeocoding.vb](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb)
+
 ## Specifications
 ### Scenarios
 * Measuring the fine dust contamination level in the air in real time. The value is displayed on the OLED Screen, and updated every second.
