@@ -83,30 +83,42 @@ Public Function ADDRGEOCODE(address As String) As String
 End Function
 
 
-Public Function URLEncode(StringToEncode As String, Optional _
-    UsePlusRatherThanHexForSpace As Boolean = False) As String
+Public Function URLEncode(ByVal StringVal As String, Optional SpaceAsPlus As Boolean = False) As String
+  Dim bytes() As Byte, b As Byte, i As Integer, space As String
 
-    Dim TempAns As String
-    Dim CurChr As Integer
-    CurChr = 1
-    Do Until CurChr - 1 = Len(StringToEncode)
-        Select Case asc(Mid(StringToEncode, CurChr, 1))
-            Case 48 To 57, 65 To 90, 97 To 122
-                TempAns = TempAns & Mid(StringToEncode, CurChr, 1)
-            Case 32
-                If UsePlusRatherThanHexForSpace = True Then
-                    TempAns = TempAns & "+"
-                Else
-                    TempAns = TempAns & "%" & Hex(32)
-                End If
-            Case Else
-                TempAns = TempAns & "%" & _
-                Format(Hex(asc(Mid(StringToEncode, _
-                CurChr, 1))), "00")
-        End Select
-        CurChr = CurChr + 1
-    Loop
-    URLEncode = TempAns
+  If SpaceAsPlus Then space = "+" Else space = "%20"
+
+  If Len(StringVal) > 0 Then
+    With New ADODB.Stream
+      .Mode = adModeReadWrite
+      .Type = adTypeText
+      .Charset = "UTF-8"
+      .Open
+      .WriteText StringVal
+      .Position = 0
+      .Type = adTypeBinary
+      .Position = 3 ' skip BOM
+      bytes = .Read
+    End With
+
+    ReDim result(UBound(bytes)) As String
+
+    For i = UBound(bytes) To 0 Step -1
+      b = bytes(i)
+      Select Case b
+        Case 97 To 122, 65 To 90, 48 To 57, 45, 46, 95, 126
+          result(i) = Chr(b)
+        Case 32
+          result(i) = space
+        Case 0 To 15
+          result(i) = "%0" & Hex(b)
+        Case Else
+          result(i) = "%" & Hex(b)
+      End Select
+    Next i
+
+    URLEncode = Join(result, "")
+  End If
 End Function
 
 
