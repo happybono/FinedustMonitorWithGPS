@@ -51,7 +51,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 > <img src="https://happybono.files.wordpress.com/2020/02/qrcode.png" width="210" height="356" alt="QRCode"/>
 
 ### February 26, 2020
-> [Performance improvements (~2× as faster than before) in the ADDRGEOCODE function.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb#L86) <br>
+> [Performance improvements (~2× as faster than before) in the ADDRGEOCODE function in the ReverseGeocoding.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb#L86) <br>
 > [Now supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in the ReverseGeocoding.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb#L115)
 
 ## Specifications
