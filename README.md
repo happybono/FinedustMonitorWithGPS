@@ -34,7 +34,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 >[Added an onclick event to displayed marker in Google Maps.](https://github.com/happybono/FinedustMonitorWithGPS/blob/95abbb8ae55be63581fe9892d7d798f0c71eb8e6/Maps/GoogleMaps.html#L80)
 
 ### February 05, 2020
->[Added VBA (Visual Basic for Applications) code for reverse geocoding support in Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb)<br>
+>[Added VBA (Visual Basic for Applications) code for reverse geocoding support in Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb)<br>
 ><img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/powered_by_msexcel_on_white.png" alt="Powered by MSExcel logo" width="217"/><br><br>
 >[Added Javascript (.gs) code for reverse geocoding support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheets.gs) ([ⓒ 2018 Christos Samaras](https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html))<br>
 >[Added Javascript (.gs) code for reverse geocoding macro support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheetsGeocodingMacro.gs) ([ⓒ 2016 - 2017 Max Vilimpoc](https://github.com/nuket/google-sheets-geocoding-macro))<br>
@@ -51,8 +51,8 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 > <img src="https://happybono.files.wordpress.com/2020/02/qrcode.png" width="210" height="356" alt="QRCode"/>
 
 ### February 26, 2020
-> [Performance improvements (up to 2× as faster than before) in the ADDRGEOCODE function in ReverseGeocoding.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb#L86) <br><br>
-> [Now supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in ReverseGeocoding.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/ReverseGeocoding.vb#L115)
+> [Performance improvements (up to 2× as faster than before) in the ADDRGEOCODE function in GEOSage.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb#L86) <br><br>
+> [Now supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in GEOSage.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb#L115)
 
 ## Specifications
 ### Scenarios
@@ -65,7 +65,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 * Using [Microsoft Excel](https://products.office.com/get-started-with-office-2019) to process batch of locations (latitude, longitude). Data can be exported in CSV format from [ThingSpeak](https://www.thingspeak.com/) to open in Excel.
 
 #### What is Reverse Geocoding?
->Reverse geocoding is the process of back (reverse) coding of a point location (latitude, longitude) to a readable address or place name. This permits the identification of nearby street addresses, places, and/or areal subdivisions such as neighbourhoods, county, state, or country.
+> Reverse geocoding is the process of back (reverse) coding of a point location (latitude, longitude) to a readable address or place name. This permits the identification of nearby street addresses, places, and/or areal subdivisions such as neighbourhoods, county, state, or country.
 
 [More information on reverse geocoding with Google Maps JavaScript API](https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding)
 <br>
