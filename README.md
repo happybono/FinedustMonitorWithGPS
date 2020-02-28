@@ -54,6 +54,16 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 > [Performance improvements (up to 2× as faster than before) in the ADDRGEOCODE function in GEOSage.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb#L86) <br><br>
 > [Now supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in GEOSage.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb#L115)
 
+### February 27, 2020
+> Added GEOSage sample files.
+
+```
+GEOSage sample includes Excel files that use demonstation data using Google Maps Geocoding API Key. The 
+API key used in this project for geocoding and reverse geocoding feature is not provided for your use. 
+The mock data demonstrates all functions with static result values as Google Maps geocoding API Key and 
+VBA Add-in code are not included in the GEOSage sample.
+```
+
 ## Specifications
 ### Scenarios
 * Measuring the fine dust contamination level in the air in real time. The value is displayed on the OLED Screen, and updated every second.
