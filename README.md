@@ -55,7 +55,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 > [Now supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in GEOSage.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb#L115)
 
 ### February 27, 2020
-> Added GEOSage sample files.
+> [Added GEOSage sample files.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Maps/Excel)
 
 ```
 GEOSage sample includes Excel files that use demonstation data using Google Maps Geocoding API Key. The 
