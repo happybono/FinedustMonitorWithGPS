@@ -57,12 +57,11 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 ### February 27, 2020
 > [Added GEOSage sample files.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Maps/Excel)
 
-```
-GEOSage sample includes Excel files that use demonstation data using Google Maps Geocoding API Key. The 
+> GEOSage sample includes Excel files that use demonstation data using Google Maps Geocoding API Key. The 
 API key used in this project for geocoding and reverse geocoding feature is not provided for your use. 
 The mock data demonstrates all functions with static result values as Google Maps geocoding API Key and 
 VBA Add-in code are not included in the GEOSage sample.
-```
+
 
 ## Specifications
 ### Scenarios
