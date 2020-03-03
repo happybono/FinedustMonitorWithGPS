@@ -61,6 +61,8 @@ API key used in this project for geocoding and reverse geocoding feature is not 
 The mock data demonstrates all functions with static result values as Google Maps geocoding API Key and 
 VBA Add-in code are not included in the GEOSage sample.
 
+### March 03, 2020
+Update and rename GEOSage.vb to GEOSage.bas
 
 ## Specifications
 ### Scenarios
