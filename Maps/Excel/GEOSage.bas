@@ -1,11 +1,12 @@
 ''
-''    FILE: GEOSage.vb
+''    FILE: GEOSage.bas
 ''  AUTHOR: Jaewoong Mun (happybono@outlook.com)
 '' CREATED: February 05, 2020
 ''
 '' Released to the public domain
 ''
 
+Attribute VB_Name = "GEOSage"
 
 Option Explicit
 
