@@ -62,7 +62,7 @@ The mock data demonstrates all functions with static result values as Google Map
 VBA Add-in code are not included in the GEOSage sample.
 
 ### March 03, 2020
-[Added GEOSage.bas.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.bas)
+> [Added GEOSage.bas file to support directly import from Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.bas)
 
 ## Specifications
 ### Scenarios
