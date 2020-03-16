@@ -106,7 +106,7 @@ VBA Add-in code are not included in the GEOSage sample.
 * Soldering required
 * D6 & D7 : TX & RX of GY-NEO6MV2 respectively.
 
-### DS18820 Temperature Sensor (Thermometer)
+### DS18B20 Temperature Sensor (Thermometer)
 * Soldering required
 * D4 : Data
 
