@@ -64,6 +64,9 @@ VBA Add-in code are not included in the GEOSage sample.
 ### March 03, 2020
 > [Added GEOSage.bas file to support directly import from Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.bas)
 
+### March 17, 2020
+Started to documenting my project.
+
 ## Specifications
 ### Scenarios
 * Measuring the fine dust contamination level in the air in real time. The value is displayed on the OLED Screen, and updated every second.
