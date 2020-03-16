@@ -65,7 +65,7 @@ VBA Add-in code are not included in the GEOSage sample.
 > [Added GEOSage.bas file to support directly import from Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.bas)
 
 ### March 17, 2020
-> Started to documenting my project. (aka Wiki)
+> Started to documenting my project (Wiki).
 
 ## Specifications
 ### Scenarios
