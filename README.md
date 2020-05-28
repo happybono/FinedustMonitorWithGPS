@@ -64,8 +64,10 @@ VBA Add-in code are not included in the GEOSage sample.
 ### March 03, 2020
 > [Added GEOSage.bas file to support directly import from Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.bas)
 
-### March 17, 2020
-> Started to documenting my project (Wiki).
+### May 28, 2020
+> [Added 3D modeled housing file.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/3DModels/SDS011-Housing.stl)
+
+<img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/3DModels/SDS011-Housing.png" alt="3DModel"/>
 
 ## Specifications
 ### Scenarios
