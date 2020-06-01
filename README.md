@@ -125,7 +125,7 @@ VBA Add-in code are not included in the GEOSage sample.
 
 ## Data Refinement / Synchronization
 ### ThingSpeak
-* ThingSpeak (https://thingspeak.com/channels/920137)
+* ThingSpeak (https://thingspeak.com/channels/976688)
 ![ThingSpeak Screenshot](ThingSpeak.png)
   
 ### Plaive
