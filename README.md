@@ -46,10 +46,6 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 ### February 20, 2020
 > ["Email Alert" function added as a ThingSpeak Analysis plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Plugins/Email/EmailNotifier.m) 
 
-### February 24, 2020
-> [Generated a QR code for faster and more convenient access to the ThingSpeak dashboard.](https://camo.githubusercontent.com/73143c13b7e99572346cd75ab1d010d677786862/68747470733a2f2f6868716561772e626e2e66696c65732e316472762e636f6d2f79346d7050454a62504a63593074416c6777342d4533326c74464e36455576317044554a666557756670434b594a7446663662464a3159427274797a7a37317335656444334f795a49326f5657385557524c624d45656d68634e484f31507976795349587276486b434e34644678482d647a776e6c41596f6e676a477578496d467468797163646557585f7479457574506c3153464233727332436c5f472d456f566b6a6148636458734e364c75566c4c3659357641523650537a536c663359503635567838416b42616641457a4e4e42504142534a6277773f77696474683d323531266865696768743d333536) <br><br>
-> <img src="https://happybono.files.wordpress.com/2020/02/qrcode.png" width="210" height="356" alt="QRCode"/>
-
 ### February 26, 2020
 > [Performance improvements (up to 2× as faster than before) in the ADDRGEOCODE function in GEOSage.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb#L86) <br><br>
 > [Now supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in GEOSage.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb#L115)
@@ -68,6 +64,10 @@ VBA Add-in code are not included in the GEOSage sample.
 > [Added 3D modeled housing file.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/3DModels/SDS011-Housing.stl)
 
 <img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/3DModels/SDS011-Housing.png" alt="3DModel"/>
+
+### 4 June, 2020
+> Programmed and attached an NFC Tag Sticker for faster and more convenient access to the ThingSpeak dashboard.
+
 
 ## Specifications
 ### Scenarios
@@ -122,6 +122,17 @@ VBA Add-in code are not included in the GEOSage sample.
 * Input : DC-5V / 2A
 * Output : DC-5V / 2.1A
 * Capacity : 5000 mAh
+
+### Anisotropic Rubber Plate Magnet
+* Dimension : 300.0 mm × 300.0 mm
+* Thickness : 2T (2mm)
+* Quantity : 2 EA
+
+### Circular NFC Tag Sticker (N-Tag 216)
+* Size : 25.0 mm
+* Capacity : 926 Byte
+* This should be programmed to automatically opening the ThingSpeak Dashboard when the NFC Capable device has contacting on the NFC Tag Sticker.
+
 
 ## Data Refinement / Synchronization
 ### ThingSpeak
