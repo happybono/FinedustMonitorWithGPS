@@ -6,6 +6,8 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
  
 ![Final Product](FineDustMonitor_Device.jpg)
 
+![Final Circuit](FineDustMonitor_Schematics.jpg)
+
 ## What's New
 ### November 24, 2019
 >[Initial Release.](https://github.com/happybono/FinedustMonitorWithGPS/commit/aa9cbf7b85308d91ce775d71c36cdd96b5740529)
