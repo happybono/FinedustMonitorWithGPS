@@ -41,7 +41,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 ><img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/powered_by_google_on_white.png" alt="Powered by Google logo" width="150"/>
 
 ### February 19, 2020
-> [Optimized performance for data processing.](https://thingspeak.com/channels/976688/api_keys)
+> [Optimized performance for data processing.](https://thingspeak.com/channels/920137/api_keys)
 
 ### February 20, 2020
 > ["Email Alert" function added as a ThingSpeak Analysis plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Plugins/Email/EmailNotifier.m) 
@@ -136,7 +136,7 @@ VBA Add-in code are not included in the GEOSage sample.
 
 ## Data Refinement / Synchronization
 ### ThingSpeak
-* ThingSpeak (https://thingspeak.com/channels/976688)
+* ThingSpeak (https://thingspeak.com/channels/920137)
 ![ThingSpeak Screenshot](ThingSpeak.png)
   
 ### Plaive
