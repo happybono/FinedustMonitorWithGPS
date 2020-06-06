@@ -125,11 +125,6 @@ VBA Add-in code are not included in the GEOSage sample.
 * Output : DC-5V / 2.1A
 * Capacity : 5000 mAh
 
-### Anisotropic Rubber Plate Magnet
-* Dimension : 300.0 mm × 300.0 mm
-* Thickness : 2T (2mm)
-* Quantity : 2 EA
-
 ### Circular NFC Tag Sticker (N-Tag 216)
 * Size : 25.0 mm
 * Capacity : 926 Byte
