@@ -99,7 +99,7 @@ VBA Add-in code are not included in the GEOSage sample.
 * Testing consisted of full-time active use until complete battery discharge. 
 * Wi-Fi was connected to a network.
 * Syncs data once every minute with PM 10.0 and PM 2.5 readings from the Nova PM (SDS011) Sensor, Temperature reading from the DS18820 Temperature Sensor and GPS positioned reading values (longitude, latitude) from the GY-NEO6MV2 GPS Sensor.
-* Battery life varies significantly with settings, usage and other factors.
+* Battery life may varies significantly with settings, usage and other factors.
 
 ## Apparatus (Equipment)
 ### Platform
