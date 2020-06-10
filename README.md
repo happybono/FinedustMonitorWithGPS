@@ -9,65 +9,67 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 ![Final Circuit](FineDustMonitor_Schematics.jpg)
 
 ## What's New
-### November 24, 2019
+### v1.0
+#### November 24, 2019
 > [Initial Release.](https://github.com/happybono/FinedustMonitorWithGPS/commit/aa9cbf7b85308d91ce775d71c36cdd96b5740529)
 
-### December 16, 2019
+#### December 16, 2019
 > [Read GPS data from ThingSpeak and displays it on Google Maps using ESP12e NodeMCU and GPSNeo6MV2 Module.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/GoogleMaps.html "FinedustMonitorWithGPS/Maps/GoogleMaps.html")
 
-### December 25, 2019
+#### December 25, 2019
 > [Now supports [Channel Status Updates] in ThingSpeak](https://thingspeak.com/channels/920137) : Updated [FinedustMonitorWithGPS.ino](https://github.com/happybono/FinedustMonitorWithGPS/commit/01367946fd2dc10b39b39dec19309892311e92ea "/FinedustMonitorWithGPS/FinedustMonitorWithGPS.ino"), [server.ino](https://github.com/happybono/FinedustMonitorWithGPS/commit/3c3a89e9d8a4e45f591379dc96e2e7b67e15914d "/FinedustMonitorWithGPS/server.ino")
 
-### December 29, 2019
+#### December 29, 2019
 > [Various bugs fixed.](https://github.com/happybono/FinedustMonitorWithGPS/commit/d6d25d7cf4dc4b91f174259ea1e473220ab79385)
 
-### January 20, 2020
+#### January 20, 2020
 > ["Latest PM sensor readings" plugin added in ThingSpeak.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins)
 
-### January 21, 2020
+### v2.0
+#### January 21, 2020
 > [Displays additional information](https://github.com/happybono/FinedustMonitorWithGPS/blob/2882255266a72da46fa2a047b24e56b23cf94838/Plugins/StatusUpdates/CSS.css#L10) ([temperature](https://github.com/happybono/FinedustMonitorWithGPS/blob/2882255266a72da46fa2a047b24e56b23cf94838/Plugins/StatusUpdates/JavaScript.html#L34), [latitude](https://github.com/happybono/FinedustMonitorWithGPS/blob/2882255266a72da46fa2a047b24e56b23cf94838/Plugins/StatusUpdates/JavaScript.html#L35), [longitude](https://github.com/happybono/FinedustMonitorWithGPS/blob/2882255266a72da46fa2a047b24e56b23cf94838/Plugins/StatusUpdates/JavaScript.html#L36)) in the[ "Latest PM sensor readings" plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)<br><br>
 >Various bugs fixed.
 
-### January 24, 2020
+#### January 24, 2020
 > [Added Reverse Geocoding function in Google Maps.](https://github.com/happybono/FinedustMonitorWithGPS/blob/95abbb8ae55be63581fe9892d7d798f0c71eb8e6/Maps/GoogleMaps.html#L26)<br><br>
 > [Optimized loading time for Google Maps.](https://github.com/happybono/FinedustMonitorWithGPS/blob/95abbb8ae55be63581fe9892d7d798f0c71eb8e6/Maps/GoogleMaps.html)
 
-### Jaunary 25, 2020
+#### Jaunary 25, 2020
 > [Added an onclick event to displayed marker in Google Maps.](https://github.com/happybono/FinedustMonitorWithGPS/blob/95abbb8ae55be63581fe9892d7d798f0c71eb8e6/Maps/GoogleMaps.html#L80)
 
-### February 05, 2020
+#### February 05, 2020
 > [Added VBA (Visual Basic for Applications) code for reverse geocoding support in Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb)<br>
 > <img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/powered_by_msexcel_on_white.png" alt="Powered by MSExcel logo" width="217"/><br><br>
 > [Added Javascript (.gs) code for reverse geocoding support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheets.gs) ([ⓒ 2018 Christos Samaras](https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html))<br>
 > [Added Javascript (.gs) code for reverse geocoding macro support in Google Sheets.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GoogleSheetsGeocodingMacro.gs) ([ⓒ 2016 - 2017 Max Vilimpoc](https://github.com/nuket/google-sheets-geocoding-macro))<br>
 > <img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/powered_by_google_on_white.png" alt="Powered by Google logo" width="150"/>
 
-### February 19, 2020
+#### February 19, 2020
 > [Optimized performance for data processing.](https://thingspeak.com/channels/920137/api_keys)
 
-### February 20, 2020
+#### February 20, 2020
 > ["Email Alert" function added as a ThingSpeak Analysis plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Plugins/Email/EmailNotifier.m) 
 
-### February 26, 2020
+#### February 26, 2020
 > [Performance improvements (up to 2× as faster than before) in the ADDRGEOCODE function in GEOSage.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb#L86) <br><br>
 > [Now supports Unicode using the Microsoft ActiveX Data Objects Library in the ADDRGEOCODE function in GEOSage.vb.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.vb#L115)
 
-### February 27, 2020
+#### February 27, 2020
 > [Added GEOSage sample files.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Maps/Excel) <br>
 > GEOSage sample includes Excel files that use demonstation data using Google Maps Geocoding API Key. The 
 API key used in this project for geocoding and reverse geocoding feature is not provided for your use. 
 The mock data demonstrates all functions with static result values as Google Maps geocoding API Key and 
 VBA Add-in code are not included in the GEOSage sample.
 
-### March 03, 2020
+#### March 03, 2020
 > [Added GEOSage.bas file to support directly import from Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.bas)
 
-### May 28, 2020
+#### May 28, 2020
 > [Added 3D modeled housing file.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/3DModels/SDS011-Housing.stl)
 
 > <img src="https://github.com/happybono/FinedustMonitorWithGPS/blob/master/3DModels/SDS011-Housing.png" alt="3DModel"/>
 
-### June 04, 2020
+#### June 04, 2020
 > Attached a programmed NFC Tag Sticker for faster and more convenient access to the ThingSpeak dashboard.
 
 
