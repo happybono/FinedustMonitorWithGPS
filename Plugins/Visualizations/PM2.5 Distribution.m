@@ -62,6 +62,6 @@ set(gca,'xtick',[1:trailingdays+1],'xticklabel',xnames)
 xtickangle(90)
 
 title(['PM 2.5 Distribution - ',num2str(trailingdays),' days trailing'])
-xlabel('Day')
+xlabel('Days')
 ylabel('Time')
 zlabel('PM 2.5')
