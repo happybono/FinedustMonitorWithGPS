@@ -111,7 +111,7 @@ VBA Add-in code are not included in the GEOSage sample.
 * Soldering required
 * D1 : TX of SDS011
 
-### 0.96" I2C OLED Display 
+### 0.96" SSD1306 I2C OLED Display 
 * Soldering required
 * D3 : Data, D2 : Clock
 
