@@ -72,6 +72,8 @@ VBA Add-in code are not included in the GEOSage sample.
 #### June 04, 2020
 > Attached a programmed NFC Tag Sticker for faster and more convenient access to the ThingSpeak dashboard.
 
+#### June 11, 2020
+> [Fine dust (PM 2.5 and PM 10.0) 3D visualization bar charts added on the ThingSpeak dashboard.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
 
 ## Specifications
 ### Scenarios
