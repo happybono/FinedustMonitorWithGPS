@@ -63,5 +63,5 @@ xtickangle(90)
 
 title(['PM 2.5 Distribution - ',num2str(trailingdays),' days trailing'])
 xlabel('Day')
-ylabel('Time of Day')
+ylabel('Time')
 zlabel('PM 2.5')
