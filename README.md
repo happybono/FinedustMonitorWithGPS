@@ -76,7 +76,7 @@ VBA Add-in code are not included in the GEOSage sample.
 > [Fine dust (PM 2.5 and PM 10.0) 3D visualization bar charts added on the ThingSpeak dashboard.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
 
 #### June 12, 2020
-> [Various bugs fixed those relates with fine dust (PM 2.5 and PM 10.0) 3D visualization bar charts.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
+> [Various bugs fixed those related with fine dust (PM 2.5 and PM 10.0) 3D visualization bar charts.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
 
 ## Specifications
 ### Scenarios
