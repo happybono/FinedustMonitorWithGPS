@@ -1,8 +1,8 @@
 % Enter your MATLAB code below
 
-readChannelID = 920137;
+readChannelID = [ThingSpeak Channel ID];
 
-readAPIKey = 'KS8FDMUY0NZ8VECV';
+readAPIKey = '[ThingSpeak Read API Key]';
 
 trailingdays = 7
 
