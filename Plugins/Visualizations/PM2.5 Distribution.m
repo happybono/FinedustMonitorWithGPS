@@ -1,8 +1,8 @@
 % Enter your MATLAB code below
 
-readChannelID = [ThingSpeak Channel ID];
+readChannelID = 920137;
 
-readAPIKey = '[ThingSpeak Read API Key]';
+readAPIKey = 'KS8FDMUY0NZ8VECV';
 
 trailingdays = 7
 
@@ -56,12 +56,12 @@ az = 27.5;
 el = 20;
 view(az, el);
 ylim([0 25])
-ynames = {'00:00'; '06:00'; '12:00'; '18:00'; '24:00'};
-set(gca,'ytick',[0 6 12 18 24],'yticklabel',ynames)
+ynames = {'06:00'; '12:00'; '18:00'; '00:00'};
+set(gca,'ytick',[2 8 14 20],'yticklabel',ynames)
 set(gca,'xtick',[1:trailingdays+1],'xticklabel',xnames)
 xtickangle(90)
 
-title(['PM 2.5 Distribution - ',num2str(trailingdays),' days trailing'])
+title(['PM 2.5 Distribution (',num2str(trailingdays),' days trailing)'])
 xlabel('Days')
-ylabel('Time')
+ylabel('Time (UTC)')
 zlabel('PM 2.5')
