@@ -132,6 +132,7 @@ VBA Add-in code are not included in the GEOSage sample.
 * USB Port : Power
 * Micro-USB : Charging Port
 * Dimension : 62.3 mm (W) × 112.0 mm (D) × 13.0 mm (H)
+* Weight : 120 g
 * Input : DC-5V / 2A
 * Output : DC-5V / 2.1A
 * Capacity : 5000 mAh
