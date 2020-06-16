@@ -2,14 +2,15 @@
 <script type='text/javascript' src='https://www.google.com/jsapi'></script>
 <script type='text/javascript'>
   
-  // set your channel id here
+  // set your channel id here.
   var channel_id = [ThingSpeak Channel ID];
-  // set your channel's read api key here if necessary
+
+  // set your channel's read api key here if necessary.
   var api_key = '[ThingSpeak Read API Key]';
 
   // load the data
   function loadData() {
-    // variable for the data point
+    // variable for the data point.
     var p_pm10;
     var p_pm25;
     var p_temp;
@@ -17,7 +18,7 @@
     var p_lng;
     var p_timestamp;
     
-    // get the data from thingspeak
+    // get the data from thingspeak.
     $.getJSON('https://api.thingspeak.com/channels/' + channel_id + '/feed/last.json?results=1&api_key=' + api_key, function(data) {
       console.log("PM sensor data: ", data);
       // get the data points
@@ -40,7 +41,7 @@
   $(document).ready(function() {
     loadData();
 
-    // load new data every 15 seconds
+    // load new data every 15 seconds.
     setInterval('loadData()', 15000);
   });
   
