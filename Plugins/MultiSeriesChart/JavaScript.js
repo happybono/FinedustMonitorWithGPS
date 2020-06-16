@@ -1,4 +1,5 @@
 <script type="text/javascript">
+  
   var series_1_channel_id = [ThingSpeak Channel ID];
   var series_1_field_number = 1;
   var series_1_read_api_key = '[ThingSpeak Read API Key]';
