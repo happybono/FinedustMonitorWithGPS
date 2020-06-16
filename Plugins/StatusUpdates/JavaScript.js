@@ -8,7 +8,7 @@
   // set your channel's read api key here if necessary.
   var api_key = '[ThingSpeak Read API Key]';
 
-  // load the data
+  // load the data.
   function loadData() {
     // variable for the data point.
     var p_pm10;
