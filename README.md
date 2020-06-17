@@ -81,7 +81,7 @@ VBA Add-in code are not included in the GEOSage sample.
 #### June 16, 2020
 > [Supports multiple series (PM 2.5 & PM 10) chart as a ThingSpeak plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/MultiSeriesChart)
 
-#### June 16, 2020
+#### June 17, 2020
 > Various bugs fixed.
 
 ## Specifications
