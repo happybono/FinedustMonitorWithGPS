@@ -105,4 +105,10 @@
     return Date.parse(d) - (my_offset * 60000);
   }
 
+  setInterval(function() {
+    addChart()
+    addSeries(series_1_channel_id, series_1_field_number, series_1_read_api_key, series_1_results, series_1_color);
+    addSeries(series_2_channel_id, series_2_field_number, series_2_read_api_key, series_2_results, series_2_color);
+  }, 60000);
+
 </script>
