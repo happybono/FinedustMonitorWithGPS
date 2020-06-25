@@ -23,7 +23,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 > [Various bugs fixed.](https://github.com/happybono/FinedustMonitorWithGPS/commit/d6d25d7cf4dc4b91f174259ea1e473220ab79385)
 
 #### January 20, 2020
-> ["Latest PM sensor readings" plugin added in ThingSpeak.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins)
+> ["Latest PM sensor readings" plugin added in ThingSpeak.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 
 ### v2.0
 #### January 21, 2020
@@ -83,6 +83,9 @@ VBA Add-in code are not included in the GEOSage sample.
 
 #### June 17, 2020
 > Various bugs fixed.
+
+#### June 25, 2020
+> [Major improvements to the "Latest PM sensor readings" plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 
 ## Specifications
 ### Scenarios
