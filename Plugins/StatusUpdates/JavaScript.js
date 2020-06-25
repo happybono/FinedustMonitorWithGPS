@@ -8,9 +8,9 @@
   // set your channel's read api key here if necessary.
   var api_key = '[ThingSpeak Read API Key]';
 
-  // load the data.
+  // load the data
   function loadData() {
-    // variable for the data point.
+    // variable for the data point
     var p_pm10;
     var p_pm25;
     var p_temp;
@@ -18,7 +18,7 @@
     var p_lng;
     var p_timestamp;
     
-    // get the data from thingspeak.
+    // get the data from thingspeak
     $.getJSON('https://api.thingspeak.com/channels/' + channel_id + '/feed/last.json?results=1&api_key=' + api_key, function(data) {
       console.log("PM sensor data: ", data);
       // get the data points
@@ -30,19 +30,19 @@
       p_timestamp = new Date(data.created_at);
       var timestamp = p_timestamp.toLocaleString();
       // update page
-      document.getElementById('pm25').innerHTML = 'PM<sub>2.5 </sub>: ' + p_pm25 + ' ㎍ / ㎥ (' + (p_pm25 / 20 * 100).toFixed(0) + '%)';
-      document.getElementById('pm10').innerHTML = 'PM<sub>10.0 </sub>: ' + p_pm10 + ' ㎍ / ㎥ (' + (p_pm10 / 50 * 100).toFixed(0) + '%)';
-      document.getElementById('temperature').innerHTML = 'Temperature  : ' + p_temp.toFixed(2) + '℃';
-      document.getElementById('latitude').innerHTML = 'Latitude  : ' + p_lat.toFixed(6);
-      document.getElementById('longitude').innerHTML = 'Longitude  : ' + p_lng.toFixed(6);
+      document.getElementById('pm25').innerHTML = p_pm25 + ' ㎍ / ㎥ (' + (p_pm25 / 20 * 100).toFixed(0) + '%)';
+      document.getElementById('pm10').innerHTML = p_pm10 + ' ㎍ / ㎥ (' + (p_pm10 / 50 * 100).toFixed(0) + '%)';
+      document.getElementById('temperature').innerHTML = p_temp.toFixed(2) + ' ℃';
+      document.getElementById('latitude').innerHTML = p_lat.toFixed(6) + '˚';
+      document.getElementById('longitude').innerHTML = p_lng.toFixed(6) + '˚';
       document.getElementById('timestamp').innerHTML = '@ ' + timestamp;
     });
   }
   $(document).ready(function() {
     loadData();
 
-    // load new data every 15 seconds.
+    // load new data every 15 seconds
     setInterval('loadData()', 15000);
   });
-  
+
 </script>   
