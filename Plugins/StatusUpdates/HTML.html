@@ -1,5 +1,4 @@
 <html>
-  
   <head>
 
   <!-- 
@@ -13,23 +12,45 @@
   %%PLUGIN_CSS%%
   %%PLUGIN_JAVASCRIPT%%
   
-  </head>  
-  
+  </head>
   <body>
-    <div id="container">
-      <div id="inner">
-        <div id="header">Latest Particulate Matter Sensor Readings</div>
-        <div id="pm25"></div>
-        <div id="pm10"></div>
-        <div id="temperature"></div>
-        <div id="latitude"></div>
-        <div id="longitude"></div>
-        <div id="timestamp"></div>
-        <div id="footer">
-            <p>Read more about <a href="http://www.who.int/mediacentre/factsheets/fs313/en/">WHO Guideline values</a>.</p>
-        </div>
-      </div>
-    </div>
+  <div id="container"></div>
+      <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <style>
+      table {
+        border-spacing:0px;
+        width: 100%;
+      }
+      th, td {
+        padding:0px;
+      }
+</style>
+  </head>
+    <table>
+          <colgroup>
+       <col span="1" style="width: 50%;">
+       <col span="1" style="width: 50%;">
+    </colgroup>
+      <tbody>
+       <tr>
+         <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">PM<sub>2.5</sub> (초미세먼지)</h2></td><td><div id="pm25"></div></td>
+        </tr>
+        <tr>
+        <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">PM<sub>10.0</sub> (미세먼지)</h2></td><td><div id="pm10"></div></td>
+        </tr>
+        <tr>
+        <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; ;font-weight:bold">Temperature (온도)</h2></td><td><div id="temperature"></div></td>
+        </tr>
+        <tr>
+        <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">Latitude (위도)</h2></td><td><div id="latitude"></div></td>
+        </tr>
+        <tr>
+        <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">Longitude (경도)</h2></td><td><div id="longitude"></div></td>
+        </tr>
+        <td colspan="2"><div id="timestamp" style="text-align:center"></div></td>
+      </tbody>
+    </table>
+    
   </body>
-  
-</html>
