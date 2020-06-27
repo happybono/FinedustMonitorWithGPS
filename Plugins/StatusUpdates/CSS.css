@@ -4,12 +4,12 @@
   body { background-color: #fff; }
   #container { height: 100%; width: 100%; display: table; }
   #inner { vertical-align: middle; display: table-cell}
-  #header { margin:15; color:#9d9e9f; font-size: 1.06em; text-align: center; font-weight:bold; }
+  #header { color:#9d9e9f; font-size: 1.06em; text-align: center; font-weight:bold; }
   #pm25 { color:#2a3a4a; font-size: 1.06em; text-align: center; font-weight:bold; }
   #pm10 { color:#2a3a4a; font-size: 1.06em; text-align: center; font-weight:bold; }
   #temperature { color:#2a3a4a; font-size: 1.06em; text-align: center; font-weight:bold; }
-  #latitude { color:#2a3a4a; font-size: 1.06em; text-align: center; font-weight:bold; }
-  #longitude { color:#2a3a4a; font-size: 1.06em; text-align: center; font-weight:bold; }
+  #latlng { color:#2a3a4a; font-size: 1.06em; text-align: center; font-weight:bold; }
+  #address { color:#2a3a4a; font-size: 1.06em; text-align: center; font-weight:bold; }
   #timestamp { color:#9d9e9f; font-size: 0.90em; text-align: center; font-weight:bold; }
   #footer {margin:3; color:#9d9e9f; font-size: 0.7em; text-align: center; }
 </style>
