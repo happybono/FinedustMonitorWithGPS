@@ -1,56 +1,96 @@
 <html>
+
   <head>
 
-  <!-- 
+    <!-- 
   
   NOTE: This plugin will not be visible on public views of a channel. 
         If you intend to make your channel public, consider using the
         MATLAB Visualization App to create your visualizations.
   
-  -->  
-
+  -->
+    
   %%PLUGIN_CSS%%
   %%PLUGIN_JAVASCRIPT%%
+
+  </head>
   
-  </head>
-  <body>
-  <div id="container"></div>
-      <head>
-    <meta charset="utf-8">
-    <title>CSS</title>
-    <style>
-      table {
-        border-spacing:0px;
-        width: 100%;
-      }
-      th, td {
-        padding:0px;
-      }
-</style>
-  </head>
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+  <!-- <script type='text/javascript' src='https://www.google.com/jsapi'></script> -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1Fh6oyZgiblaAQekbgKCYdonWGulV7lI">
+  </script>
+
+  <body onload="initPage()">
+    <div id="container"></div>
+
+    <head>
+      <meta charset="utf-8">
+      <title>Data Output</title>
+      <style>
+        table {
+          border-spacing: 0px;
+          width: 100%;
+        }
+
+        th,
+        td {
+          padding: 0px;
+        }
+
+      </style>
+    </head>
     <table>
-          <colgroup>
-       <col span="1" style="width: 50%;">
-       <col span="1" style="width: 50%;">
-    </colgroup>
+      <colgroup>
+        <col span="1" style="width: 27%;">
+        <col span="1" style="width: 73%;">
+      </colgroup>
       <tbody>
-       <tr>
-         <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">PM<sub>2.5</sub> (초미세먼지)</h2></td><td><div id="pm25"></div></td>
+        <tr>
+          <td>
+            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">PM<sub>2.5</sub></h2>
+          </td>
+          <td>
+            <div id="pm25"></div>
+          </td>
         </tr>
         <tr>
-        <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">PM<sub>10.0</sub> (미세먼지)</h2></td><td><div id="pm10"></div></td>
+          <td>
+            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">PM<sub>10.0</sub></h2>
+          </td>
+          <td>
+            <div id="pm10"></div>
+          </td>
         </tr>
         <tr>
-        <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; ;font-weight:bold">Temperature (온도)</h2></td><td><div id="temperature"></div></td>
+          <td>
+            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; ;font-weight:bold">Temperature</h2>
+          </td>
+          <td>
+            <div id="temperature"></div>
+          </td>
         </tr>
         <tr>
-        <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">Latitude (위도)</h2></td><td><div id="latitude"></div></td>
+          <td>
+            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">Lat, Lng</h2>
+          </td>
+          <td>
+            <div id="latlng"></div>
+          </td>
         </tr>
         <tr>
-        <td><h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">Longitude (경도)</h2></td><td><div id="longitude"></div></td>
+          <td>
+            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">Address</h2>
+          </td>
+          <td>
+            <div id="address"></div>
+          </td>
         </tr>
-        <td colspan="2"><div id="timestamp" style="text-align:center"></div></td>
+        <td colspan="2">
+          <div id="timestamp" style="text-align:center"></div>
+        </td>
       </tbody>
     </table>
-    
+
   </body>
+
+</html>
