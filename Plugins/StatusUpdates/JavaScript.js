@@ -2,6 +2,7 @@
   
 // set your channel id here
 var channel_id = [ThingSpeak Channel ID];
+
 // set your channel's read api key here if necessary
 var api_key = '[ThingSpeak Read API Key]';
 
@@ -16,13 +17,11 @@ var p_pm10,
   timestamp;
 
 function initPage() {
-	loadData();
-	setInterval(loadData, 15000);
+  loadData();
+  setInterval(loadData, 15000);
 }
 
 function loadData() {
-  console.log('loadData()');
-	
   p_pm10 = 0;
   p_pm25 = 0;
   p_temp = 0;
@@ -33,7 +32,6 @@ function loadData() {
 
   // get the data from thingspeak
   $.getJSON('https://api.thingspeak.com/channels/' + channel_id + '/feed/last.json?results=1&api_key=' + api_key, function(data) {
-    console.log("PM sensor data: ", data);
     // get the data points
     p_pm25 = parseFloat(data.field1);
     p_pm10 = parseFloat(data.field2);
@@ -41,13 +39,12 @@ function loadData() {
     p_lat = parseFloat(data.field4);
     p_lng = parseFloat(data.field5);
     p_timestamp = new Date(data.created_at);
-		timestamp = p_timestamp.toLocaleString();
+    timestamp = p_timestamp.toLocaleString();
     revGeocode();
   });
 }
 
 function revGeocode() {
-  console.log('revGeocode()');
   var geocoder = new google.maps.Geocoder();
   var latlng = {
     lat: parseFloat(p_lat.toFixed(6)),
@@ -72,11 +69,10 @@ function revGeocode() {
 }
 
 function outputData() {
-  console.log('outputData()');
   // update page
   document.getElementById('pm25').innerHTML = p_pm25 + ' ㎍ / ㎥ (' + (p_pm25 / 20 * 100).toFixed(0) + '%)';
   document.getElementById('pm10').innerHTML = p_pm10 + ' ㎍ / ㎥ (' + (p_pm10 / 50 * 100).toFixed(0) + '%)';
-  document.getElementById('temperature').innerHTML = p_temp.toFixed(2) + ' ℃';
+  document.getElementById('temperature').innerHTML = p_temp.toFixed(1) + ' °C';
   document.getElementById('latlng').innerHTML = p_lat.toFixed(6) + '˚, ' + p_lng.toFixed(6) + '˚';
   document.getElementById('address').innerHTML = p_address;
   document.getElementById('timestamp').innerHTML = '@ ' + timestamp;
