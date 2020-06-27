@@ -1,96 +1,55 @@
 <html>
 
   <head>
-
     <!-- 
-  
-  NOTE: This plugin will not be visible on public views of a channel. 
-        If you intend to make your channel public, consider using the
-        MATLAB Visualization App to create your visualizations.
-  
-  -->
-    
-  %%PLUGIN_CSS%%
-  %%PLUGIN_JAVASCRIPT%%
+		NOTE: This plugin will not be visible on public views of a channel. 
+			    If you intend to make your channel public, consider using the
+			    MATLAB Visualization App to create your visualizations.
+    -->
 
-  </head>
+    %%PLUGIN_CSS%%
+    %%PLUGIN_JAVASCRIPT%%
   
-    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
-  <!-- <script type='text/javascript' src='https://www.google.com/jsapi'></script> -->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
+  <script type='text/javascript' src='https://www.google.com/jsapi'></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=[Your Google Maps JavaScript API Key]">
   </script>
 
+    <meta charset="utf-8">
+  </head>
+
   <body onload="initPage()">
-    <div id="container"></div>
-
-    <head>
-      <meta charset="utf-8">
-      <title>Data Output</title>
-      <style>
-        table {
-          border-spacing: 0px;
-          width: 100%;
-        }
-
-        th,
-        td {
-          padding: 0px;
-        }
-
-      </style>
-    </head>
     <table>
       <colgroup>
-        <col span="1" style="width: 27%;">
-        <col span="1" style="width: 73%;">
+        <col span="1" style="width: 20%;">
+        <col span="1" style="width: 60%;">
       </colgroup>
       <tbody>
         <tr>
-          <td>
-            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">PM<sub>2.5</sub></h2>
-          </td>
-          <td>
-            <div id="pm25"></div>
-          </td>
+          <td class="data_title">PM<sub>2.5</sub></td>
+          <td id="pm25" class="data_value"></td>
         </tr>
         <tr>
-          <td>
-            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">PM<sub>10.0</sub></h2>
-          </td>
-          <td>
-            <div id="pm10"></div>
-          </td>
+          <td class="data_title">PM<sub>10.0</sub></td>
+          <td id="pm10" class="data_value"></td>
         </tr>
         <tr>
-          <td>
-            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; ;font-weight:bold">Temperature</h2>
-          </td>
-          <td>
-            <div id="temperature"></div>
-          </td>
+          <td class="data_title">Temperature</td>
+          <td id="temperature" class="data_value"></td>
         </tr>
         <tr>
-          <td>
-            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">Lat, Lng</h2>
-          </td>
-          <td>
-            <div id="latlng"></div>
-          </td>
+          <td class="data_title">Lat, Lng</td>
+          <td id="latlng" class="data_value"></td>
         </tr>
         <tr>
-          <td>
-            <h2 style="text-align:center; font-size:1.06em; color:#2a3a4a; font-weight:bold">Address</h2>
-          </td>
-          <td>
-            <div id="address"></div>
-          </td>
+          <td class="data_title">Location</td>
+          <td id="address" class="data_value"></td>
         </tr>
-        <td colspan="2">
-          <div id="timestamp" style="text-align:center"></div>
-        </td>
+        <tr>
+          <td colspan="2" id="timestamp"></td>
+        </tr>
       </tbody>
     </table>
-
   </body>
 
 </html>
