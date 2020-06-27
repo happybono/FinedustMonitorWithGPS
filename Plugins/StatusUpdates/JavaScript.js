@@ -72,7 +72,7 @@ function outputData() {
   // update page
   document.getElementById('pm25').innerHTML = p_pm25 + ' ㎍ / ㎥ (' + (p_pm25 / 20 * 100).toFixed(0) + '%)';
   document.getElementById('pm10').innerHTML = p_pm10 + ' ㎍ / ㎥ (' + (p_pm10 / 50 * 100).toFixed(0) + '%)';
-  document.getElementById('temperature').innerHTML = p_temp.toFixed(1) + ' °C';
+  document.getElementById('temperature').innerHTML = p_temp.toFixed + ' °C';
   document.getElementById('latlng').innerHTML = p_lat.toFixed(6) + '˚, ' + p_lng.toFixed(6) + '˚';
   document.getElementById('address').innerHTML = p_address;
   document.getElementById('timestamp').innerHTML = '@ ' + timestamp;
