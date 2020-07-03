@@ -1,4 +1,4 @@
-% Read PM 10.0 value data from a ThingSpeak channel for three seperate days 
+% Read PM 10.0 value data from a ThingSpeak channel for seven seperate days 
 % and visualize the data in a single plot using the PLOT function. 
 
 % Channel ID to read data from 
