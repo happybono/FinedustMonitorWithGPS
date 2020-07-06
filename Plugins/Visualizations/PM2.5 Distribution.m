@@ -28,7 +28,7 @@ AQData = zeros(length(dayRange), 23);
 % Generate PM 2.5 value 3D bar chart
 % Get PM 2.5 value per whole clock for each day
 for m = 1:length(dayRange) % Loop over all days
-    for n = 1:24 % Loop over 24 hours
+    for n = 1:23 % Loop over 24 hours
         if any(day(time)==dayRange(m) & hour(time)==n); % Check if data exist for this specific time
             hourlyData = pm25Data((day(time)==dayRange(m) & hour(time)==n)); % Pull out the hourly PM 2.5 value from the matrix
             AQData(m,n) = hourlyData(1); % Assign the PM 2.5 value at the time closest to the whole clock
