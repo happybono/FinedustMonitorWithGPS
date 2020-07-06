@@ -23,7 +23,7 @@ pm10Data = data(:,2);
 % Create a day range vector
 dayRange = day(dateRange(1):dateRange(2));
 % Pre-allocate matrix
-AQData = zeros(length(dayRange),24);
+AQData = zeros(length(dayRange), 23);
 
 % Generate PM 10.0 value 3D bar chart
 % Get PM 10.0 value per whole clock for each day
@@ -49,7 +49,7 @@ ylabel('Days')
 datetick('y','ddd') % Change the Y-Tick to display specified date format
 % datetick('y','mmm dd')
 ax = gca;
-ax.XTick = 1:24
-ax.XTickLabels = 1:24
+ax.XTick = 1:23
+ax.XTickLabels = 1:23
 ax.YTickLabelRotation = 30; % Rotate label for better display
 colorbar % Add a color bar to indicate the scaling of color
