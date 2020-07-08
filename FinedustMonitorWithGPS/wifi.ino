@@ -9,7 +9,7 @@
 #include <ESP8266WiFi.h>
 
 boolean connect_ap(char* ssid, char* password) {
-  int count = 60;                          // 최대 60 회 연결 시도 중 wifi 연결하면 성공, 아니면 실패
+  int count = 60;                                 // 최대 60 회 연결 시도 중 wifi 연결하면 성공, 아니면 실패
   Serial.println();
   Serial.print("connecting to ");
   Serial.println(ssid);
