@@ -2,28 +2,29 @@
 % and visualize the data in a single plot using the PLOT function. 
 
 % Channel ID to read data from 
-readChannelID = [ThingSpeak Channel ID]; 
+readChannelID = 920137; 
 % PM 10.0 Field ID 
-pm10FieldID = [ThingSpeak Field ID]; 
+pm10FieldID = 2; 
 
 % Channel Read API Key 
 % If your channel is private, then enter the read API 
 % Key between the '' below: 
-readAPIKey = '[ThingSpeak Read API Key]'; 
+readAPIKey = 'KS8FDMUY0NZ8VECV'; 
 
 % Specify date range
 dateRange = [datetime('today')-days(6),datetime('now')];
 % Read data including the timestamp, and channel information.
-[data,time,channelInfo] = thingSpeakRead(readChannelID,'Fields',1:2,...
+[data,time,channelInfo] = thingSpeakRead(readChannelID,'Fields',1:3,...
                           'DateRange',dateRange);
 % Create variables to store different sorts of data
 pm25Data = data(:,1);
 pm10Data = data(:,2);
+tempData = data(:,3);
 
 % Create a day range vector
 dayRange = day(dateRange(1):dateRange(2));
 % Pre-allocate matrix
-AQData = zeros(length(dayRange), 23);
+AQData = zeros(length(dayRange),23);
 
 % Generate PM 10.0 value 3D bar chart
 % Get PM 10.0 value per whole clock for each day
