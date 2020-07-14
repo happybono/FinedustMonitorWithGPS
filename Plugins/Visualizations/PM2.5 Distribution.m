@@ -2,36 +2,37 @@
 % and visualize the data in a single plot using the PLOT function. 
 
 % Channel ID to read data from 
-readChannelID = [ThingSpeak Channel ID]; 
+readChannelID = 920137; 
 % PM 2.5 Field ID 
-pm25FieldID = [ThingSpeak Field ID]; 
+pm25FieldID = 1; 
 
 % Channel Read API Key 
 % If your channel is private, then enter the read API 
 % Key between the '' below: 
-readAPIKey = '[ThingSpeak Read API Key]'; 
+readAPIKey = 'KS8FDMUY0NZ8VECV'; 
 
 % Specify date range
 dateRange = [datetime('today')-days(6),datetime('now')];
 % Read data including the timestamp, and channel information.
-[data,time,channelInfo] = thingSpeakRead(readChannelID,'Fields',1:2,...
+[data,time,channelInfo] = thingSpeakRead(readChannelID,'Fields',1:3,...
                           'DateRange',dateRange);
 % Create variables to store different sorts of data
 pm25Data = data(:,1);
 pm10Data = data(:,2);
+tempData = data(:,3);
 
 % Create a day range vector
 dayRange = day(dateRange(1):dateRange(2));
 % Pre-allocate matrix
-AQData = zeros(length(dayRange), 23);
+AQData = zeros(length(dayRange),23);
 
 % Generate PM 2.5 value 3D bar chart
 % Get PM 2.5 value per whole clock for each day
 for m = 1:length(dayRange) % Loop over all days
     for n = 1:23 % Loop over 24 hours
         if any(day(time)==dayRange(m) & hour(time)==n); % Check if data exist for this specific time
-            hourlyData = pm25Data((day(time)==dayRange(m) & hour(time)==n)); % Pull out the hourly PM 2.5 value from the matrix
-            AQData(m,n) = hourlyData(1); % Assign the PM 2.5 value at the time closest to the whole clock
+            hourlyData = pm25Data((day(time)==dayRange(m) & hour(time)==n)); % Pull out the hourly PM 2.5 from the matrix
+            AQData(m,n) = hourlyData(1); % Assign the PM 2.5 at the time closest to the whole clock
         end
     end
 end
@@ -46,8 +47,7 @@ end
 title('PM 2.5 Distribution')
 xlabel('Hour of Day')
 ylabel('Days')
-datetick('y','ddd') % Change the Y-Tick to display specified date format
-% datetick('y','mmm dd')
+datetick('y','ddd') % Change the Y-Tick to display specified date format ('y','mmm dd')
 ax = gca;
 ax.XTick = 1:23
 ax.XTickLabels = 1:23
