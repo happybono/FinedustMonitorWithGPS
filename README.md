@@ -97,6 +97,9 @@ VBA Add-in code are not included in the GEOSage sample.
 #### July 08, 2020
 > [Fixed a defect that prevented the measurement value from being uploaded under certain environmental conditions.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/FinedustMonitorWithGPS/FinedustMonitorWithGPS.ino)
 
+#### July 15, 2020
+> [Temperature 3D visualization bar charts added on the ThingSpeak dashboard.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
+
 ## Specifications
 ### Scenarios
 * Measuring the fine dust contamination level in the air in real time. The value is displayed on the OLED Screen, and updated every second.
