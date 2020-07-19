@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<style>
 		/* Always set the map height explicitly to define the size of the div
-			* element that contains the map. */
+       * element that contains the map. */
 		#map {
 			height: 100%;
 		}
@@ -21,67 +21,76 @@
 	</style>
 	<script src="https://maps.googleapis.com/maps/api/js?key=[Your Google Maps JavaScript API Key]"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
 	<script>
-
-		var map;
-		var x;
-		var y;
+		var position;
+		var apiUrl = "https://api.thingspeak.com/channels/920137/feeds.json?results=1&api_key=[ThingSpeak Read API Key]";
 		var latlng;
+		var infowindow = new google.maps.InfoWindow;
 
-		function loadMap() {
-			$.getJSON("https://api.thingspeak.com/channels/920137/fields/4/last.json?api_key=[ThingSpeak Read API Key]", function (result) {
-				var m = result;
-				x = Number(m.field4);
-			});
-			$.getJSON("https://api.thingspeak.com/channels/920137/fields/5/last.json?api_key=[ThingSpeak Read API Key]", function (result) {
-				var m = result;
-				y = Number(m.field5);
+		function initPosition() {
+			$.getJSON(apiUrl, function (result) {
+				position = [result.feeds[0].field4, result.feeds[0].field5];
 			}).done(function () {
 				initMap();
 			});
 		}
 
-		window.setInterval(function () { loadMap(); }, 30000);
-
 		function initMap() {
-			latlng = { lat: x, lng: y }
-			var mapOptions = {
-				zoom: 18,
-				center: latlng
-			}
-			var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+			latlng = new google.maps.LatLng(position[0], position[1]);
+			var myOptions = {
+				zoom: 16,
+				center: latlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			};
+			map = new google.maps.Map(document.getElementById("map"), myOptions);
 
 			var geocoder = new google.maps.Geocoder;
-			var infowindow = new google.maps.InfoWindow;
+
 			geocodeLatLng(geocoder, map, infowindow)
+
+			marker = new google.maps.Marker({
+				position: latlng,
+				map: map,
+			});
+
+			setInterval(updateData, 45000);
+		}
+
+		function updateData() {
+			console.log();
+			var nPosition;
+			$.getJSON(apiUrl, function (result) {
+				nPosition = [result.feeds[0].field4, result.feeds[0].field5];
+			}).done(function () {
+				jumpMarker(nPosition);
+			});
+		}
+
+		//Load google map
+		google.maps.event.addDomListener(window, 'load', initPosition);
+
+		function jumpMarker(result) {
+			latlng = new google.maps.LatLng(result[0], result[1]);
+			var geocoder = new google.maps.Geocoder;
+
+			map.setCenter(latlng);
+			marker.setPosition(latlng);
+			console.log('jumpMarker()')
+			console.log(latlng.toString());
+			geocodeLatLng(geocoder, map, infowindow);
 		}
 
 		function geocodeLatLng(geocoder, map, infowindow) {
-			//var input = document.getElementById('latlng').value;
-			//var latlngStr = input.split(',', 2);
-			//var latlng = {lat: parseFloat(latlngStr[0]), lng: parseFloat(latlngStr[1])};
 			geocoder.geocode({ 'location': latlng }, function (results, status) {
 				if (status === 'OK') {
 					if (results[0]) {
-						//map.setZoom(11);
-						var marker = new google.maps.Marker({
-							position: latlng,
-							map: map
-						});
-						
-						/* results[0].formatted_address: "277 Bedford Ave, Brooklyn, NY 11211, USA"
-						   results[1].formatted_address: "Grand St/Bedford Av, Brooklyn, NY 11211, USA"
-						   results[2].formatted_address: "Williamsburg, Brooklyn, NY, USA"
-						   results[3].formatted_address: "Brooklyn, NY, USA"
-						   results[4].formatted_address: "New York, NY, USA"
-						   results[5].formatted_address: "Brooklyn, NY 11211, USA"
-						   results[6].formatted_address: "Kings County, NY, USA"
-						   results[7].formatted_address: "New York-Northern New Jersey-Long Island, NY-NJ-PA, USA"
-						   results[8].formatted_address: "New York Metropolitan Area, USA"
-						   results[9].formatted_address: "New York, USA" */
-						
-						infowindow.setContent(results[0].formatted_address);						
+						infowindow.setContent(results[0].formatted_address);
 						infowindow.open(map, marker);
+
+						console.log('geocodeLatLng()');
+						console.log(latlng.toString());
+						console.log(results[0].formatted_address);
 					} else {
 						window.alert('No results found');
 					}
@@ -92,14 +101,12 @@
 				google.maps.event.addListener(marker, 'click', function () {
 					infowindow.open(map, marker);
 				});
-
-				google.maps.event.addDomListener(window, 'load', initMap);
 			});
 		}
 	</script>
 </head>
 
-<body onload='loadMap()'>
+<body>
 	<div id="map"></div>
 </body>
 
