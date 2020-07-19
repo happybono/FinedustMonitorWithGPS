@@ -1,5 +1,13 @@
 # FinedustMonitorWithGPS
 Fine dust (air pollution) monitoring station. Air pollution monitoring channel updates once every minute with PM 10.0 and PM 2.5 readings from the Nova PM (SDS011) Sensor. Also includes real time location tracking capabilities using the GY-NEO6MV2 GPS Sensor.
+
+<div align="center">
+<img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/FineDustMonitorwithGPS"> 
+<img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/happybono/FineDustMonitorwithGPS">
+<img alt="GitHub Repo Languages" src="https://img.shields.io/github/languages/count/happybono/FineDustMonitorWithGPS">
+<img alt="GitHub Top Languages" src="https://img.shields.io/github/languages/top/HappyBono/FineDustMonitorWithGPS">
+</div>
+                                                                                                         
  
 ### Please note
 > This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not require a GPS module, Please visit the following link: https://github.com/happybono/FinedustMonitor
