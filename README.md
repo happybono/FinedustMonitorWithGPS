@@ -17,6 +17,9 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 ![Final Circuit](FineDustMonitor_Schematics.jpg)
 
 ## What's New
+<details>
+<summary>Click to Expand</summary>
+  
 ### v1.0
 #### November 24, 2019
 > [Initial Release.](https://github.com/happybono/FinedustMonitorWithGPS/commit/aa9cbf7b85308d91ce775d71c36cdd96b5740529)
@@ -107,6 +110,8 @@ VBA Add-in code are not included in the GEOSage sample.
 
 #### July 15, 2020
 > [Temperature 3D visualization bar charts added on the ThingSpeak dashboard.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
+</details>
+
 
 ## Specifications
 ### Scenarios
