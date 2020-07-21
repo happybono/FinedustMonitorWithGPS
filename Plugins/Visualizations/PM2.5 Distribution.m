@@ -2,14 +2,14 @@
 % and visualize the data in a single plot using the PLOT function. 
 
 % Channel ID to read data from 
-readChannelID = 920137; 
+readChannelID = [ThingSpeak Channel ID]; 
 % PM 2.5 Field ID 
 pm25FieldID = 1; 
 
 % Channel Read API Key 
 % If your channel is private, then enter the read API 
 % Key between the '' below: 
-readAPIKey = 'KS8FDMUY0NZ8VECV'; 
+readAPIKey = '[ThingSpeak Read API Key]'; 
 
 % Specify date range
 dateRange = [datetime('today')-days(6),datetime('now')];
