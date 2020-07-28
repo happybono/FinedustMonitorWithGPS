@@ -1,7 +1,6 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-
 <style type="text/css">
-  
+
 	body {
 		background-color: #fff;
 	}
@@ -19,13 +18,20 @@
 		background-color: #e3e4e8;
 	}
 	
-	.data_title, .data_value {
+	.data_value {
 		color: #2a3a4a;
 		font-size: 1.06em;
 		text-align: center;
 		font-weight: bold;
 	}
 	
+  	.data_title {
+		color: #2a3a4a;
+		font-size: 1.06em;
+		text-align: center;
+		font-weight: bold;
+	}
+  
 	#timestamp {
 		color: #2a3a4a;
 		font-size: 0.90em;
@@ -33,10 +39,10 @@
         font-weight: bold;
 	}
   
-    	#footer {
-  	  color : #9d9e9f;
-  	  font-size : 0.7em;      
-  	  text-align : center;
-        }
-  	
+    #footer {
+    color : #9d9e9f;
+    font-size : 0.7em;      
+    text-align : center;
+    }
+  
 </style>
