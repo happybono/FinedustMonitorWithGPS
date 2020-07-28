@@ -8,13 +8,13 @@ var api_key = '[ThingSpeak Read API Key]';
 
 // variable for the data point
 var p_pm10,
-    p_pm25,
-    p_temp,
-    p_lat,
-    p_lng,
-    p_address,
-    p_timestamp,
-    timestamp;
+  p_pm25,
+  p_temp,
+  p_lat,
+  p_lng,
+  p_address,
+  p_timestamp,
+  timestamp;
 
 function initPage() {
   loadData();
@@ -75,7 +75,7 @@ function outputData() {
   document.getElementById('temperature').innerHTML = p_temp + ' °C';
   document.getElementById('latlng').innerHTML = p_lat.toFixed(6) + '˚, ' + p_lng.toFixed(6) + '˚';
   document.getElementById('address').innerHTML = p_address.link("http://google.com/maps/place/?q=" + p_address, "_blank" + "</p>");
-  document.getElementById('timestamp').innerHTML = '@ ' + timestamp;
+  document.getElementById('timestamp').innerHTML = '<i class="material-icons" style="font-size:1.1em;">sync</i>' + " " + timestamp;
 }
 
 </script>
