@@ -1,5 +1,4 @@
 <html>
-
   <head>
     <!-- 
 		NOTE: This plugin will not be visible on public views of a channel. 
@@ -13,9 +12,9 @@
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js'></script>
   <script type='text/javascript' src='https://www.google.com/jsapi'></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=[Your Google Maps JavaScript API Key]">
-  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
- <meta charset="utf-8">
+  <meta charset="utf-8">	  
   </head>
 
   <body onload="initPage()">
@@ -26,11 +25,11 @@
       </colgroup>
       <tbody>
         <tr>
-          <td class="data_title">PM<sub>2.5</sub></td>
+          <td class="data_title">PM<sub>2.5 </sub><a target="_blank" rel="noopener noreferrer" href="https://happybono.wordpress.com/2020/07/28/pm-2-5/"><i class="material-icons" style="font-size:1.06em;color:dodgerblue;">info</i></a></td>
           <td id="pm25" class="data_value"></td>
         </tr>
         <tr>
-          <td class="data_title">PM<sub>10.0</sub></td>
+          <td class="data_title">PM<sub>10.0 </sub><a target="_blank" rel="noopener noreferrer" href="https://happybono.wordpress.com/2020/07/28/pm-10-0/"><i class="material-icons" style="font-size:1.06em;color:dodgerblue;">info</i></a></td>
           <td id="pm10" class="data_value"></td>
         </tr>
         <tr>
@@ -38,7 +37,7 @@
           <td id="temperature" class="data_value"></td>
         </tr>
         <tr>
-          <td class="data_title">Lat, Lng</td>
+          <td class="data_title">Lat., Lng.</td>
           <td id="latlng" class="data_value"></td>
         </tr>
         <tr>
@@ -50,9 +49,9 @@
         </tr>
       </tbody>
     </table>
-      <div id="footer">
-         <p>Read more about <a href="http://www.who.int/mediacentre/factsheets/fs313/en/">WHO Guideline values</a>.</p>
-      </div>        
+            <div id="footer">
+            <p>Read more about <a href="http://www.who.int/mediacentre/factsheets/fs313/en/">WHO Guideline values</a>.</p>
+          </div>
   </body>
 
 </html>
