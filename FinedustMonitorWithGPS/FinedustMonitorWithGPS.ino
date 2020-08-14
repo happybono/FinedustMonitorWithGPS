@@ -8,6 +8,9 @@
 
 #include <TinyGPS++.h>
 #include <SoftwareSerial.h>
+TinyGPSPlus gps;
+SoftwareSerial ss(12, 13);
+SoftwareSerial dust(D1, D0, false, 256);            //RX, TX Communication
 #include "RunningMedian.h"
 
 RunningMedian pm25s = RunningMedian(19);
@@ -16,6 +19,7 @@ RunningMedian pm10s = RunningMedian(19);
 char* ssid = "[Wi-Fi SSID]";
 char* password = "[Wi-Fi Password]";
 String api_key = "[ThingSpeak Write API Key]";
+
 //#define PLAIVE_SERVER_ENABLE
 #define THINGSPEAK_SERVER_ENABLE
 
@@ -24,9 +28,19 @@ float map_x, map_y;
 String s_map_x, s_map_y, status;
 int pm25i, pm10i;
 
-TinyGPSPlus gps;
-SoftwareSerial ss(12, 13);
-SoftwareSerial dust(D1, D0, false, 256);            //RX,TX Communication
+//초기 세팅 (Initialize.)
+void setup() {
+  Serial.begin(115200);
+  dust.begin(9600);
+  ss.begin(9600);
+  setup_oled();
+  wifi_ready = connect_ap(ssid, password);
+  
+  if (!wifi_ready) nowifi_oled();
+
+  Serial.println("\nFinedust Sensor Box V1.3, 2019/12/25 HappyBono");
+}
+
 
 void got_dust(int pm25, int pm10) {                 //formula for dust sensor just use!!
   pm25 /= 10;
@@ -55,19 +69,6 @@ void do_interval() {
 
 unsigned long mark = 0;
 boolean got_interval = false;
-
-//초기 세팅 (Initialize.)
-void setup() {
-  Serial.begin(115200);
-  dust.begin(9600);
-  ss.begin(9600);
-  setup_oled();//oled setting
-  wifi_ready = connect_ap(ssid, password);             //wifi 연결 여부 확인 (checking wifi connection.)
-
-  if (!wifi_ready) nowifi_oled();                      //wifi no connection
-  delay(5000);
-  Serial.println("\nFinedust Sensor Box V1.3, 2019/12/25 HappyBono");
-}
 
 //아두이노가 반복적으로 작동하는 부분 (Where Arduino works repeatedly.)
 void loop() {
@@ -104,7 +105,7 @@ void loop() {
     //Serial.println(int(pm10s.getMedian()));
 
     /* AQI (실시간 대기질 지수) 등급 분류를 위한 코드입니다.
-       실시간 대기질 기준 수치는 국제 표준인 WHO 대기질 수치 기준으로 분류합니다.
+       실시간 대기질 기준 수치는 국제 표준인 WHO 대기질 수치 기준으로 계산하였습니다.
 
        http://www.euro.who.int/__data/assets/pdf_file/0005/78638/E90038.pdf
        https://airnow.gov/index.cfm?action=aqibasics.aqi */
@@ -168,13 +169,11 @@ void loop() {
         종합적인 정보 표현을 위해 초미세먼지와 미세먼지 등급을 비교 한 후
         두 가지 중 높은 등급 기준으로 경고 혹은 권고메시지를 표시합니다. */
 
-    // 분류된 초미세먼지 등급이 미세먼지 등급보다 같거나 높은 경우, 초미세먼지 등급을 기준으로.
-    // 분류된 미세먼지 등급이 초미세먼지 등급보다 높은 경우, 미세먼지 등급을 기준으로.
-    // 내용을 표시하기 위하여 아래의 문자열을 status 변수에 저장합니다.
+    // 분류된 초미세먼지 등급이 미세먼지 등급보다 같거나 높은 경우, 초미세먼지 등급을 기준으로 내용을 표시하기 위하여 아래의 문자열을 status 변수에 저장합니다.
 
     switch ((pm25i >= pm10i) ? pm25i : pm10i) {
       case 1:
-        status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. The conditions ideal for outdoor activities.";
+        status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. Conditions ideal for outdoor activities.";
         break;
 
       case 2:
