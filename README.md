@@ -137,7 +137,7 @@ VBA Add-in code are not included in the GEOSage sample.
 * IEEE 802.11 b/g/n Wi-Fi technology.
 
 ### Battery life 
-* Up to 16 hours of typical device usage.
+* Up to 35 hours (1 day and 12 hours) of typical device usage.
 * Testing consisted of full-time active use until complete battery discharge. 
 * Wi-Fi was connected to a network.
 * Syncs data once every minute with PM 10.0 and PM 2.5 readings from the Nova PM (SDS011) Sensor, Temperature reading from the DS18B20 Temperature Sensor and GPS positioned reading values (longitude, latitude) from the GY-NEO6MV2 GPS Sensor.
@@ -163,14 +163,14 @@ VBA Add-in code are not included in the GEOSage sample.
 * Soldering required
 * D4 : Data
 
-### KOKIRI A-PACK FIXIE 5 (KP-LS50) Portable Battery
+### iriver Tactile (SPB-10000) Portable Battery
 * USB Port : Power
 * Micro-USB : Charging Port
 * Dimension : 62.3 mm (W) × 112.0 mm (D) × 13.0 mm (H)
-* Weight : 120 g
+* Weight : 180 g
 * Input : DC-5V / 2A
 * Output : DC-5V / 2.1A
-* Capacity : 5000 mAh
+* Capacity : 10,000 mAh
 
 ### Circular NFC Tag Sticker (N-Tag 216)
 * Size : 25.0 mm
