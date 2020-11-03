@@ -169,7 +169,7 @@ VBA Add-in code are not included in the GEOSage sample.
 * Dimension : 62.3 mm (W) × 112.0 mm (D) × 13.0 mm (H)
 * Weight : 180 g
 * Input : DC-5V / 2A
-* Output : DC-5V / 2.1A
+* Output : DC-5V / 2A
 * Capacity : 10,000 mAh
 
 ### Circular NFC Tag Sticker (N-Tag 216)
