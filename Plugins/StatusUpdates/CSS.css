@@ -1,6 +1,8 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 <style type="text/css">
-
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+  
 	body {
 		background-color: #fff;
 	}
@@ -21,6 +23,7 @@
 	.data_value {
 		color: #2a3a4a;
 		font-size: 1.06em;
+        font-family: 'Fresca', sans-serif;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -28,6 +31,7 @@
   	.data_title {
 		color: #2a3a4a;
 		font-size: 1.06em;
+        font-family: 'Fresca', sans-serif;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -35,14 +39,16 @@
 	#timestamp {
 		color: #2a3a4a;
 		font-size: 0.90em;
+        font-family: 'Fresca', sans-serif;
 		text-align: center;
         font-weight: bold;
 	}
   
     #footer {
-    color : #9d9e9f;
-    font-size : 0.7em;      
-    text-align : center;
+        color : #9d9e9f;
+        font-size : 0.7em;  
+        font-family: 'Lato', sans-serif;    
+        text-align : center;
     }
   
 </style>
