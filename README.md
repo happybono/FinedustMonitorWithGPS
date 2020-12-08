@@ -114,6 +114,9 @@ VBA Add-in code are not included in the GEOSage sample.
 #### December 07, 2020
 > [Applied font styling to the "Latest PM sensor readings" plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)<br><br>
 > [Adjusted code formatting and indentation (if applicable).](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
+
+#### December 08, 2020
+> [Improved readability to symbols and measuring units.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 </details>
 
 
