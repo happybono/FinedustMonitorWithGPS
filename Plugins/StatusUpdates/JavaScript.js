@@ -70,12 +70,12 @@ function revGeocode() {
 
 function outputData() {
   // update page
-  document.getElementById('pm25').innerHTML = p_pm25 + ' ㎍ / ㎥ (' + (p_pm25 / 20 * 100).toFixed(0) + '%)';
-  document.getElementById('pm10').innerHTML = p_pm10 + ' ㎍ / ㎥ (' + (p_pm10 / 50 * 100).toFixed(0) + '%)';
+  document.getElementById('pm25').innerHTML = p_pm25 + ' μg / m³  (' + (p_pm25 / 20 * 100).toFixed(0) + '%)';
+  document.getElementById('pm10').innerHTML = p_pm10 + ' μg / m³  (' + (p_pm10 / 50 * 100).toFixed(0) + '%)';
   document.getElementById('temperature').innerHTML = p_temp + ' °C';
   document.getElementById('latlng').innerHTML = p_lat.toFixed(6) + '˚, ' + p_lng.toFixed(6) + '˚';
   document.getElementById('address').innerHTML = p_address.link("http://google.com/maps/place/?q=" + p_address, "_blank" + "</p>");
-  document.getElementById('timestamp').innerHTML = '<i class="material-icons" style="font-size:1.1em;">sync</i>' + " " + timestamp;
+  document.getElementById('timestamp').innerHTML = '<i class="material-icons" style="font-size:0.90em;">sync</i>' + " " + timestamp;
 }
 
 </script>
