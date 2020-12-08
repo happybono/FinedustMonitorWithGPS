@@ -116,7 +116,7 @@ VBA Add-in code are not included in the GEOSage sample.
 > [Adjusted code formatting and indentation (if applicable).](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 
 #### December 08, 2020
-> [Improved readability to symbols and measuring units.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
+> [Improved readability to symbols and measurement units.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 </details>
 
 
