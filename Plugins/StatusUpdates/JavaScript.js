@@ -62,6 +62,7 @@ function revGeocode() {
       }
     } else {
       console.log('Geocoder failed due to: ' + status);
+      p_address = 'Geocoder failed due to: ' + status
     }
 
     outputData();
@@ -75,7 +76,7 @@ function outputData() {
   document.getElementById('temperature').innerHTML = p_temp + ' °C';
   document.getElementById('latlng').innerHTML = p_lat.toFixed(6) + '˚, ' + p_lng.toFixed(6) + '˚';
   document.getElementById('address').innerHTML = p_address.link("http://google.com/maps/place/?q=" + p_address, "_blank" + "</p>");
-  document.getElementById('timestamp').innerHTML = '<i class="material-icons" style="font-size:0.90em;">sync</i>' + " " + timestamp;
+  document.getElementById('timestamp').innerHTML = '<i class="material-icons" style="font-size:1.08em;">update</i>' + " " + timestamp;
 }
 
 </script>
