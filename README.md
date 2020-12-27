@@ -117,10 +117,10 @@ VBA Add-in code are not included in the GEOSage sample.
 
 #### December 08, 2020
 > [Improved readability to symbols and measurement units.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
-</details>
 
 #### December 27, 2020
 > [When the Geocoder failed due to : ZERO_RESULTS, no longer displayed the error message in the pop-up message box, will be displayed error message in the Latest PM sensor readings" plugin as a text.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
+</details>
 
 ## Specifications
 ### Scenarios
