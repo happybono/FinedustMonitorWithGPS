@@ -185,7 +185,7 @@ void loop() {
         break;
 
       case 4:
-        status = "Satisfactory (4) : Members of sensitive groups may experience health effects, Other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
+        status = "Satisfactory (4) : Members of sensitive groups may experience health effects, other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
         break;
 
       case 5:
