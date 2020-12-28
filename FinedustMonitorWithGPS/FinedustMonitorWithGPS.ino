@@ -173,15 +173,15 @@ void loop() {
 
     switch ((pm25i >= pm10i) ? pm25i : pm10i) {
       case 1:
-        status = "Excellent (1) : The air quality is excellent. The air pollution pose no threat. Conditions ideal for outdoor activities.";
+        status = "Excellent (1) :The air quality is excellent. As air pollution poses no threat, conditions are ideal for outdoor activities.";
         break;
 
       case 2:
-        status = "Very Good (2) : Air quality is very good, and air pollution poses little or no risk. Conditions very good for outdoor activities.";
+        status = "Very Good (2) : The air quality is very good. As air pollution poses little or no risk, conditions very good for outdoor activities.";
         break;
 
       case 3:
-        status = "Moderate (3) : Air quality is acceptable. however, for some pollutants there may be a moderate health concern for a very small number of people who are unusually sensitive to air pollution.";
+        status = "Moderate (3) : Air quality is acceptable. however, for some pollutants, there may be a moderate health concern for specific people who are unusually sensitive to air pollution.";
         break;
 
       case 4:
@@ -193,11 +193,11 @@ void loop() {
         break;
 
       case 6:
-        status = "Severe (6) : Everyone may experience more serious health effects. People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are discouraged.";
+        status = "Severe (6) : Everyone may experience more serious health effects. People at risk should be avoided to go outside and should limit outdoor activities to a minimum. Outdoor activities are discouraged.";
         break;
 
       case 7:
-        status = "Hazardous (7) : People at risk should be avoided to go outside and should limit the outdoor activities to minimum. Outdoor activities are strongly discouraged.";
+        status = "Hazardous (7) : People at risk should be avoided going outside and should limit outdoor activities to a minimum. Outdoor activities are strongly discouraged.";
         break;
     }
 
