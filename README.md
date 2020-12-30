@@ -122,7 +122,7 @@ VBA Add-in code are not included in the GEOSage sample.
 > ["Geocoder failed due to: ZERO_RESULTS" error output changed. The error message is no longer displayed in the pop-up message box, will display it in the "Latest PM sensor readings" plugin as text.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 
 #### December 30, 2020
-> Various bugs fixed.
+> [Various bugs fixed.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/FinedustMonitorWithGPS/FinedustMonitorWithGPS.ino)
 </details>
 
 ## Specifications
