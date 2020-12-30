@@ -122,6 +122,9 @@ VBA Add-in code are not included in the GEOSage sample.
 > ["Geocoder failed due to: ZERO_RESULTS" error output changed. The error message is no longer displayed in the pop-up message box, will display it in the "Latest PM sensor readings" plugin as text.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 </details>
 
+#### December 30, 2020
+> Various bugs fixed.
+
 ## Specifications
 ### Scenarios
 * Measuring the fine dust contamination level in the air in real time. The value is displayed on the OLED Screen, and updated every second.
