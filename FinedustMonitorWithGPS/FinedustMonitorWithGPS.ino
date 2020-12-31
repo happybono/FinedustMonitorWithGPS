@@ -173,7 +173,7 @@ void loop() {
 
     switch ((pm25i >= pm10i) ? pm25i : pm10i) {
       case 1:
-        status = "Excellent (1) :The air quality is excellent. As air pollution poses no threat, conditions are ideal for outdoor activities.";
+        status = "Excellent (1) : The air quality is excellent. As air pollution poses no threat, conditions are ideal for outdoor activities.";
         break;
 
       case 2:
