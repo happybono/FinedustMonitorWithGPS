@@ -157,7 +157,7 @@ VBA Add-in code are not included in the GEOSage sample.
 
 ## Apparatus (Equipment)
 ### Platform
-* ESP8266 NodeMCU
+* NodeMCU ESP8266-12E
 
 ### SDS011 Dust Sensor
 * Soldering required
