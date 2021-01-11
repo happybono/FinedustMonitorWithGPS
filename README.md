@@ -123,6 +123,9 @@ VBA Add-in code are not included in the GEOSage sample.
 
 #### December 30, 2020
 > [Various bugs fixed.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/FinedustMonitorWithGPS/FinedustMonitorWithGPS.ino)
+
+#### January 11, 2021
+> [Now supports notifications through Twitter using Thingtweet plugin from the ThingSpeak platform.](https://www.twitter.com/Jeongwang3D_AQI)
 </details>
 
 ## Specifications
