@@ -203,8 +203,28 @@ VBA Add-in code are not included in the GEOSage sample.
 * Plaive (https://plaive.10make.com/)
 ![Plaive Screenshot](Plaive.png)
 
-## Drivers
-Please install https://github.com/squix78/esp8266-oled-ssd1306
+## Libraries Used
+### DallasTemperature
+This library supports the following devices :
+
+DS18B20
+DS18S20 - Please note there appears to be an issue with this series.
+DS1822
+DS1820
+MAX31820
+
+https://github.com/milesburton/Arduino-Temperature-Control-Library
+
+
+### TinyGPSPlus (TinyGPS++) for GY-NEO6MV2
+A new, customizable Arduino NMEA parsing library A NEW Full-featured GPS/NMEA Parser for Arduino TinyGPS++ is a new Arduino library for parsing NMEA data streams provided by GPS modules.
+
+Like its predecessor, TinyGPS, this library provides compact and easy-to-use methods for extracting position, date, time, altitude, speed, and course from consumer GPS devices.
+https://github.com/mikalhart/TinyGPSPlus
+
+### SSD1306 (0.96") OLED Display
+This is a driver for SSD1306 128x64, 128x32, 64x48 and 64x32 OLED displays running on the Arduino/ESP8266 & ESP32 and mbed-os platforms. Can be used with either the I2C or SPI version of the display.
+https://www.github.com/ThingPulse/esp8266-oled-ssd1306
 
 ## References
 * Christos Samaras 2018, Geocoding & Reverse Geocoding Functions In Google Sheets, My Engineering World, Christos Samaras, viewed 5 February 2020, <https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html>.
