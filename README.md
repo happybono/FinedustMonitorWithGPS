@@ -194,6 +194,9 @@ VBA Add-in code are not included in the GEOSage sample.
 * https://www.amazon.com/GoToTags-Blank-White-Metal-NFC/dp/B00TRL774A/ref=sr_1_5?dchild=1&keywords=ntag216&qid=1591593422&sr=8-5
 
 
+## Schematics
+![Schematics Diagram](FineDustMonitorGPS_SCHEMDiag.png)
+
 ## Data Refinement / Synchronization
 ### ThingSpeak
 * ThingSpeak (https://thingspeak.com/channels/920137)
