@@ -239,7 +239,6 @@ Important differences between running average and running median:
 * Running median will give often constant values for some time.
 * As one knows the values in the buffer one can predict to some extend how much the next samples will change the running median.
 * Running median is a bit harder as one needs to keep the values in order to remove the oldest and keep them sorted to be able to select the median.
-
 https://github.com/RobTillaart/Arduino/tree/master/libraries/RunningMedian
 
 ## References
