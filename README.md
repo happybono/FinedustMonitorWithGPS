@@ -181,10 +181,10 @@ VBA Add-in code are not included in the GEOSage sample.
 ### iriver Tactile (SPB-10000) Portable Battery
 * USB Port : Power
 * Micro-USB : Charging Port
-* Dimension : 62.3 mm (W) × 112.0 mm (D) × 13.0 mm (H)
+* Dimension : 63.3 mm (W) × 90.7 mm (D) × 22.3 mm (H)
 * Weight : 180 g
-* Input : DC-5V / 2A
-* Output : DC-5V / 2A
+* Input : DC-5V / 2A (Micro 5-Pin)
+* Output : DC-5V / 2A (2 USB ports)
 * Capacity : 10,000 mAh
 
 ### Circular NFC Tag Sticker (N-Tag 216)
