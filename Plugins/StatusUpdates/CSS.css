@@ -25,7 +25,7 @@
 	.data_value {
 		color: #2a3a4a;
 		font-size: 1.06em;
-font-family: 'Fresca', sans-serif;
+		font-family: 'Fresca', sans-serif;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -33,7 +33,7 @@ font-family: 'Fresca', sans-serif;
   	.data_title {
 		color: #2a3a4a;
 		font-size: 1.06em;
-font-family: 'Fresca', 'Spoqa Han Sans Neo', sans-serif;
+		font-family: 'Fresca', 'Spoqa Han Sans Neo', sans-serif;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -41,16 +41,16 @@ font-family: 'Fresca', 'Spoqa Han Sans Neo', sans-serif;
 	#timestamp {
 		color: #2a3a4a;
 		font-size: 0.90em;
-font-family: 'Fresca', 'Spoqa Han Sans Neo', sans-serif;
+		font-family: 'Fresca', 'Spoqa Han Sans Neo', sans-serif;
 		text-align: center;
-        font-weight: bold;
+ 	        font-weight: bold;
 	}
   
     #footer {
-    color : #9d9e9f;
-    font-size : 0.78em;  
-font-family: 'Hind', sans-serif;   
-    text-align : center;
+	    color : #9d9e9f;
+	    font-size : 0.78em;
+	    font-family: 'Hind', sans-serif;
+	    text-align : center;
     }
   
 </style>
