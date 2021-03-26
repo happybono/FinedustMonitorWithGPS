@@ -5,6 +5,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind&display=swap'); 
 
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+  
 	body {
 		background-color: #fff;
 	}
@@ -25,7 +32,7 @@
 	.data_value {
 		color: #2a3a4a;
 		font-size: 1.06em;
-        font-family: 'Fresca',  'Youth', sans-serif;
+        font-family: 'Fresca', 'Bazzi', sans-serif;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -33,7 +40,7 @@
   	.data_title {
 		color: #2a3a4a;
 		font-size: 1.06em;
-        font-family: 'Fresca', 'Youth', sans-serif;
+        font-family: 'Fresca', 'Bazzi', sans-serif;
 		text-align: center;
 		font-weight: bold;
 	}
@@ -41,7 +48,7 @@
 	#timestamp {
 		color: #2a3a4a;
 		font-size: 0.90em;
-        font-family: 'Fresca',  'Youth', sans-serif;
+        font-family: 'Fresca', 'Bazzi', sans-serif;
 		text-align: center;
         font-weight: bold;
 	}
