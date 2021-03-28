@@ -126,6 +126,10 @@ VBA Add-in code are not included in the GEOSage sample.
 
 #### January 11, 2021
 > [Now supports notifications through Twitter using Thingtweet plugin from the ThingSpeak platform.](https://www.twitter.com/Jeongwang3D_AQI)
+
+#### March 28, 2021
+> [Now supports analyzing and drawing charts on https://thingspeak.com/channels/1184617. Shown are the weekly average values (PM 2.5, PM 10.0, and temperature) using data from https://thingspeak.com/channels/920137.]
+
 </details>
 
 ## Specifications
