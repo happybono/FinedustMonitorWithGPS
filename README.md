@@ -132,7 +132,7 @@ VBA Add-in code are not included in the GEOSage sample.
 > [Now supports analyzing and drawing charts on https://thingspeak.com/channels/1184617. Shown are the weekly average values (PM 2.5, PM 10.0, and temperature) using data from https://thingspeak.com/channels/920137.](https://github.com/happybono/FinedustMonitorWithGPS/commit/a3c0b472f2549ebac2ff92c9009388211a50a09a)
  
 #### April 22, 2021
-> [Added Twitter timeline widget as a plugin,](https://github.com/happybono/FinedustMonitorWithGPS/tree/b334c427448ce27f469f366334dc8303b18c8db3/Plugins/TwitterTimeline)
+> [Added Twitter timeline widget as a javascript based plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/tree/b334c427448ce27f469f366334dc8303b18c8db3/Plugins/TwitterTimeline)
 </details>
 
 ## Specifications
