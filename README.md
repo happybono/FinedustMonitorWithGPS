@@ -133,7 +133,12 @@ VBA Add-in code are not included in the GEOSage sample.
  
 #### April 22, 2021
 > [Added Twitter timeline widget as a javascript based plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/tree/b334c427448ce27f469f366334dc8303b18c8db3/Plugins/TwitterTimeline)
+
+#### August 23, 2021
+> [Improvements have been made to the "Email Alert" function.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Plugins/Email/EmailNotifier.m) 
 </details>
+
+
 
 ## Specifications
 ### Scenarios
