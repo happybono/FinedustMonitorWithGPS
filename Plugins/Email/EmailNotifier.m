@@ -18,7 +18,7 @@ alertSubjectLv7 = sprintf("Outdoor activities are strongly discouraged!");
 
 
 if dust25 >= 35.0 || dust10 >= 69.0 
-    webwrite(alertURL, "body", alertBodyLv5, "subject", alertSubject5, options);
+    webwrite(alertURL, "body", alertBodyLv5, "subject", alertSubjectLv5, options);
 elseif dust25 >= 44.0 || dust10 >= 85.0 
     webwrite(alertURL, "body", alertBodyLv6, "subject", alertSubjectLv6, options);
 elseif dust25 >= 52.0 || dust10 >= 102.0 
