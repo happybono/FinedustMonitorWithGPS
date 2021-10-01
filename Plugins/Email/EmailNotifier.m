@@ -18,9 +18,21 @@ alertSubjectLv7 = sprintf("Outdoor activities are strongly discouraged!");
 
 
 if dust25 >= 35.0 || dust10 >= 69.0 
+    try
     webwrite(alertURL, "body", alertBodyLv5, "subject", alertSubjectLv5, options);
+    catch someException
+    fprintf("Failed to send alert: %s\n", someException.message);
+    end
 elseif dust25 >= 44.0 || dust10 >= 85.0 
+    try
     webwrite(alertURL, "body", alertBodyLv6, "subject", alertSubjectLv6, options);
+    catch someException
+    fprintf("Failed to send alert: %s\n", someException.message);
+    end
 elseif dust25 >= 52.0 || dust10 >= 102.0 
+    try
     webwrite(alertURL, "body", alertBodyLv7, "subject", alertSubjectLv7, options);
+    catch someException
+    fprintf("Failed to send alert: %s\n", someException.message);
+    end
 end
