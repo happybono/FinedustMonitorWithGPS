@@ -136,6 +136,9 @@ VBA Add-in code are not included in the GEOSage sample.
 
 #### August 23, 2021
 > [Improvements have been made to the "Email Alert" function.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Plugins/Email/EmailNotifier.m) 
+  
+#### April 16, 2022
+> [Update to support tightened the rules around query parameters in the ThingSpeak platform.](https://github.com/happybono/FinedustMonitorWithGPS/commit/42160c6df4b8b7759f6b9ec417fe9858e86d11a1)
 </details>
 
 
