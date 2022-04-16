@@ -173,31 +173,31 @@ void loop() {
 
     switch ((pm25i >= pm10i) ? pm25i : pm10i) {
       case 1:
-        status = "Excellent (1) : The air quality is excellent. As air pollution poses no threat, conditions are ideal for outdoor activities.";
+        status = "Excellent%20(1)%20:%20The%20air%20quality%20is%20excellent.%20As%20air%20pollution%20poses%20no%20threat,%20conditions%20are%20ideal%20for%20outdoor%20activities.";
         break;
 
       case 2:
-        status = "Very Good (2) : The air quality is very good. As air pollution poses little or no risk, conditions very good for outdoor activities.";
+        status = "Very%20Good%20(2)%20:%20The%20air%20quality%20is%20very%20good.%20As%20air%20pollution%20poses%20little%20or%20no%20risk,%20conditions%20very%20good%20for%20outdoor%20activities.";
         break;
 
       case 3:
-        status = "Moderate (3) : Air quality is acceptable. however, for some pollutants, there may be a moderate health concern for specific people who are unusually sensitive to air pollution.";
+        status = "Moderate%20(3)%20:%20Air%20quality%20is%20acceptable.%20however,%20for%20some%20pollutants,%20there%20may%20be%20a%20moderate%20health%20concern%20for%20specific%20people%20who%20are%20unusually%20sensitive%20to%20air%20pollution.";
         break;
 
       case 4:
-        status = "Satisfactory (4) : Members of sensitive groups may experience health effects, other people should limit spending time outdoors, especially when they experience symptoms such as cough or sore throat.";
+        status = "Satisfactory%20(4)%20:%20Members%20of%20sensitive%20groups%20may%20experience%20health%20effects,%20other%20people%20should%20limit%20spending%20time%20outdoors,%20especially%20when%20they%20experience%20symptoms%20such%20as%20cough%20or%20sore%20throat.";
         break;
 
       case 5:
-        status = "Bad (5) : Everyone may begin to experience health effects, members of sensitive groups may experience more serious health effects. Not recommended for outdoor activities.";
+        status = "Bad%20(5)%20:%20Everyone%20may%20begin%20to%20experience%20health%20effects,%20members%20of%20sensitive%20groups%20may%20experience%20more%20serious%20health%20effects.%20Not%20recommended%20for%20outdoor%20activities.";
         break;
 
       case 6:
-        status = "Severe (6) : Everyone may experience more serious health effects. People at risk should be avoided to go outside and should limit outdoor activities to a minimum. Outdoor activities are discouraged.";
+        status = "Severe%20(6)%20:%20Everyone%20may%20experience%20more%20serious%20health%20effects.%20People%20at%20risk%20should%20be%20avoided%20to%20go%20outside%20and%20should%20limit%20outdoor%20activities%20to%20a%20minimum.%20Outdoor%20activities%20are%20discouraged.";
         break;
 
       case 7:
-        status = "Hazardous (7) : People at risk should avoid going outside and should limit outdoor activities to a minimum. Outdoor activities are strongly discouraged.";
+        status = "Hazardous%20(7)%20:%20People%20at%20risk%20should%20avoid%20going%20outside%20and%20should%20limit%20outdoor%20activities%20to%20a%20minimum.%20Outdoor%20activities%20are%20strongly%20discouraged.";
         break;
     }
 
