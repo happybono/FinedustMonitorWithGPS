@@ -38,7 +38,7 @@ void setup() {
   
   if (!wifi_ready) nowifi_oled();
 
-  Serial.println("\nFinedust Sensor Box V1.3, 2019/12/25 HappyBono");
+  Serial.println("\nFinedust Sensor Box V3.2, 2022/04/16 HappyBono");
 }
 
 
