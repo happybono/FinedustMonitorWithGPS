@@ -2,11 +2,12 @@
 <html>
 
 <head>
+	<meta http-equiv="x-ua-compatible" content="IE=11">
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
 	<meta charset="utf-8">
 	<style>
 		/* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
+		* element that contains the map. */
 		#map {
 			height: 100%;
 		}
@@ -19,7 +20,8 @@
 			padding: 0;
 		}
 	</style>
-	<script src="https://maps.googleapis.com/maps/api/js?key=[Your Google Maps JavaScript API Key]"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=[Your Google Maps JavaScript API Key]&callback=initMap&v=weekly&libraries=marker"
+			defer"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
 	<script>
@@ -41,7 +43,12 @@
 			var myOptions = {
 				zoom: 16,
 				center: latlng,
-				mapTypeId: google.maps.MapTypeId.ROADMAP
+                		mapId: "[Your Google Maps Map ID]",
+				fullscreenControl: false,
+				streetViewControl: true,
+				streetViewControlOptions: {
+					position: google.maps.ControlPosition.TOP_RIGHT
+				}
 			};
 			map = new google.maps.Map(document.getElementById("map"), myOptions);
 
@@ -49,12 +56,13 @@
 
 			geocodeLatLng(geocoder, map, infowindow)
 
-			marker = new google.maps.Marker({
+			marker = new google.maps.marker.AdvancedMarkerElement({
 				position: latlng,
 				map: map,
+				//title: "Lat. : " + position[0] + "\nLng. : " + position[1]
 			});
 
-			setInterval(updateData, 45000);
+			setInterval(updateData, 60000);
 		}
 
 		function updateData() {
@@ -75,6 +83,7 @@
 			var geocoder = new google.maps.Geocoder;
 
 			map.setCenter(latlng);
+			marker.setTitle("Lat. : " + result[0] + "\nLng. : " + result[1]);
 			marker.setPosition(latlng);
 			console.log('jumpMarker()')
 			console.log(latlng.toString());
@@ -86,13 +95,17 @@
 				if (status === 'OK') {
 					if (results[0]) {
 						infowindow.setContent(results[0].formatted_address);
+						infowindow.setHeaderContent("측정 장소");
 						infowindow.open(map, marker);
-
 						console.log('geocodeLatLng()');
 						console.log(latlng.toString());
 						console.log(results[0].formatted_address);
 					} else {
-						window.alert('No results found');
+						console.log('No results found');
+
+						infowindow.setContext("")
+						infowindow.open(map, marker);
+						infowindow.close();
 					}
 				} else {
 					console.log('Geocoder failed due to: ' + status);
@@ -109,5 +122,4 @@
 <body>
 	<div id="map"></div>
 </body>
-
 </html>
