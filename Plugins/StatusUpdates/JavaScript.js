@@ -1,9 +1,9 @@
 <script>
 // set your channel id here
-var channel_id = '[ThingSpeak Channel ID]';
+var channel_id = '[ThingSpeak-Channel-ID]';
 
 // set your channel's read api key here if necessary
-var api_key = '[ThingSpeak Read API Key]';
+var api_key = '[ThingSpeak-Read-API-Key]';
 
 // variables for the data point
 var p_pm10,
