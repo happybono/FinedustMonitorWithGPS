@@ -1,60 +1,90 @@
-<html>
-  <head>
-    <!-- 
-		NOTE: This plugin will not be visible on public views of a channel. 
-			    If you intend to make your channel public, consider using the
-			    MATLAB Visualization App to create your visualizations.
-    -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
-    %%PLUGIN_CSS%%
-    %%PLUGIN_JAVASCRIPT%%
+<style type="text/css">
+@import url('//cdn.rawgit.com/young-ha/webfont-archive/master/css/Youth.css');
+@import url('https://fonts.googleapis.com/css2?family=Fresca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind&display=swap'); 
 
-  
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=[Your-Google-Maps-API-Key]"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <meta charset="utf-8">
-  </head>
+@font-face {
+    font-family: 'Bazzi';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/Bazzi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
-  <body onload="initPage()">
-    <table>
-      <colgroup>
-        <col span="1" style="width: 20%;">
-        <col span="1" style="width: 80%;">
-      </colgroup>
-      <tbody>
-        <tr>
-          <td class="data_title">PM<sub>2.5 </sub><a target="_blank" rel="noopener noreferrer" href="https://happybono.wordpress.com/2020/07/28/pm-2-5/"><i class="material-icons" style="font-size:1.06em;color:#0f4c75;">info</i></a></td>
-          <td id="pm25" class="data_value"></td>
-        </tr>
-        <tr>
-          <td class="data_title">PM<sub>10.0 </sub><a target="_blank" rel="noopener noreferrer" href="https://happybono.wordpress.com/2020/07/28/pm-10-0/"><i class="material-icons" style="font-size:1.06em;color:#0f4c75;">info</i></a></td>
-          <td id="pm10" class="data_value"></td>
-        </tr>
-        <tr>
-          <td class="data_title">Temperature</td>
-          <td id="temperature" class="data_value"></td>
-        </tr>
-        <tr>
-          <td class="data_title">Lat., Lng.</td>
-          <td id="latlng" class="data_value"></td>
-        </tr>
-        <tr>
-          <td class="data_title">Location</td>
-          <td id="address" class="data_value"></td>
-        </tr>
-        <tr>
-<td colspan="2" id="timestamp">
-  <i class="material-icons" style="font-size:1.08em;">eco</i>
-  <span id="timestamp_text">Loading...</span>
-</td>
-        </tr>
-      </tbody>
-    </table>
-    <div id="footer">
-      <p>Learn more about <a href="http://www.who.int/mediacentre/factsheets/fs313/en/" style="color:#0f4c75">WHO Guideline values</a>.</p>
-    </div>
-  </body>
+body {
+    background-color: #fff;
+}
 
-</html>
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td {
+    padding: 8px;
+}
+
+tr:nth-child(odd) {
+    background-color: #e3e4e8;
+}
+
+.data_value {
+    color: #2a3a4a;
+    font-size: 1.06em;
+    font-family: 'Fresca', 'Bazzi', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.data_title {
+    color: #2a3a4a;
+    font-size: 1.06em;
+    font-family: 'Fresca', 'Bazzi', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#timestamp {
+    color: #2a3a4a;
+    font-size: 0.90em;
+    font-family: 'Fresca', 'Bazzi', sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+#footer {
+    color: #9d9e9f;
+    font-size: 0.78em;
+    font-family: 'Hind', sans-serif;
+    text-align: center;
+}
+
+/* --- Flip animation for per-character updates --- */
+.data_value span {
+    display: inline-block;
+    position: relative;
+}
+
+.flipping {
+    display: inline-block;
+    animation: flip 0.6s ease-in-out;
+}
+
+@keyframes flip {
+    0%   { transform: rotateX(0deg); }
+    50%  { transform: rotateX(-90deg); }
+    100% { transform: rotateX(0deg); }
+}
+
+/* --- Responsive styles --- */
+@media screen and (max-width: 768px) {
+    table {
+        font-size: 0.9em;
+    }
+    td {
+        padding: 6px;
+    }
+}  
+</style>
