@@ -141,7 +141,7 @@ VBA Add-in code are not included in the GEOSage sample.
 > [Update to support tightened the rules around query parameters in the ThingSpeak platform.](https://github.com/happybono/FinedustMonitorWithGPS/commit/42160c6df4b8b7759f6b9ec417fe9858e86d11a1)
 
 #### March 26, 2025
-[Applied text flipping animation to the "Latest PM sensor readings" plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
+> [Applied text flipping animation to the "Latest PM sensor readings" plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 </details>
 
 
