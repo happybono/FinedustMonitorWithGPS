@@ -1,5 +1,5 @@
 # FinedustMonitorWithGPS
-Fine dust (air pollution) monitoring station. Air pollution monitoring channel updates once every minute with PM 10.0 and PM 2.5 readings from the Nova PM (SDS011) Sensor. Also includes real time location tracking capabilities using the GY-NEO6MV2 GPS Sensor.
+Fine dust (air pollution) monitoring station. Air pollution monitoring channel updates once every minute with PM 10.0 and PM 2.5 readings from the Nova PM (SDS011) Sensor. Also includes real-time location tracking capabilities using the GY-NEO6MV2 GPS Sensor.
 
 <div align="center">
 <img alt="GitHub Last Commit" src="https://img.shields.io/github/last-commit/happybono/FineDustMonitorwithGPS"> 
@@ -10,7 +10,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
                                                                                                          
  
 ### Please note
-> This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not require a GPS module, Please visit the following link: https://github.com/happybono/FinedustMonitor
+> This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not require a GPS module, please visit the following link: https://github.com/happybono/FinedustMonitor
  
 ![Final Product](FineDustMonitor_Device.jpg)
 
@@ -67,13 +67,13 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 
 #### February 27, 2020
 > [Added GEOSage sample files.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Maps/Excel) <br>
-> GEOSage sample includes Excel files that use demonstation data using Google Maps Geocoding API Key. The 
-API key used in this project for geocoding and reverse geocoding feature is not provided for your use. 
-The mock data demonstrates all functions with static result values as Google Maps geocoding API Key and 
-VBA Add-in code are not included in the GEOSage sample.
+> GEOSage sample includes Excel files that use demonstration data using Google Maps Geocoding API Key. The 
+API key used in this project for geocoding and reverse geocoding features is not provided for your use. 
+The mock data demonstrates all functions with static result values as the Google Maps geocoding API Key and 
+VBA Add-in code is not included in the GEOSage sample.
 
 #### March 03, 2020
-> [Added GEOSage.bas file to support directly import from Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.bas)
+> [Added GEOSage.bas file to support direct import from Microsoft Excel.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/Excel/GEOSage.bas)
 
 #### May 28, 2020
 > [Added 3D modeled housing file.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/3DModels/SDS011-Housing.stl)
@@ -87,7 +87,7 @@ VBA Add-in code are not included in the GEOSage sample.
 > [Fine dust (PM 2.5 and PM 10.0) 3D visualization bar charts added on the ThingSpeak dashboard.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
 
 #### June 12, 2020
-> [Various bugs fixed those related with fine dust (PM 2.5 and PM 10.0) 3D visualization bar charts.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
+> [Various bugs fixed related to fine dust (PM 2.5 and PM 10.0) 3D visualization bar charts.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
 
 #### June 16, 2020
 > [Supports multiple series (PM 2.5 & PM 10.0) chart as a ThingSpeak plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/MultiSeriesChart)
@@ -100,10 +100,10 @@ VBA Add-in code are not included in the GEOSage sample.
 
 #### June 27, 2020
 > [Various improvements to the "Latest PM sensor readings" plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)<br><br>
-> [Several bugs fixed those related with the "Latest PM sensor readings" plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
+> [Several bugs fixed related to the "Latest PM sensor readings" plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 
 #### July 03, 2020
-> [Various bugs fixed those related with fine dust (PM 2.5 and PM 10.0) 3D visualization bar charts.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
+> [Various bugs fixed related to fine dust (PM 2.5 and PM 10.0) 3D visualization bar charts.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/Visualizations)
 
 #### July 08, 2020
 > [Fixed a defect that prevented the measurement value from being uploaded under certain environmental conditions.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/FinedustMonitorWithGPS/FinedustMonitorWithGPS.ino)
@@ -116,7 +116,7 @@ VBA Add-in code are not included in the GEOSage sample.
 > [Adjusted code formatting and indentation (if applicable).](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 
 #### December 08, 2020
-> [Improved readability to symbols and measurement units.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
+> [Improved readability of symbols and measurement units.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
 
 #### December 27, 2020
 > ["Geocoder failed due to: ZERO_RESULTS" error output changed. The error message is no longer displayed in the pop-up message box, will display it in the "Latest PM sensor readings" plugin as text.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
@@ -126,13 +126,13 @@ VBA Add-in code are not included in the GEOSage sample.
 
 ### v3.0
 #### January 11, 2021
-> [Now supports notifications through Twitter using Thingtweet plugin from the ThingSpeak platform.](https://www.twitter.com/Jeongwang3D_AQI)
+> [Now supports notifications through Twitter using the Thingtweet plugin from the ThingSpeak platform.](https://www.twitter.com/Jeongwang3D_AQI)
 
 #### March 28, 2021
 > [Now supports analyzing and drawing charts on https://thingspeak.com/channels/1184617. Shown are the weekly average values (PM 2.5, PM 10.0, and temperature) using data from https://thingspeak.com/channels/920137.](https://github.com/happybono/FinedustMonitorWithGPS/commit/a3c0b472f2549ebac2ff92c9009388211a50a09a)
  
 #### April 22, 2021
-> [Added Twitter timeline widget as a javascript based plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/tree/b334c427448ce27f469f366334dc8303b18c8db3/Plugins/TwitterTimeline)
+> [Added Twitter timeline widget as a JavaScript-based plug-in.](https://github.com/happybono/FinedustMonitorWithGPS/tree/b334c427448ce27f469f366334dc8303b18c8db3/Plugins/TwitterTimeline)
 
 #### August 23, 2021
 > [Improvements have been made to the "Email Alert" function.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Plugins/Email/EmailNotifier.m) 
@@ -148,17 +148,17 @@ VBA Add-in code are not included in the GEOSage sample.
 
 ## Specifications
 ### Scenarios
-* Measuring the fine dust contamination level in the air in real time. The value is displayed on the OLED Screen, and updated every second.
+* Measuring the fine dust contamination level in the air in real time. The value is displayed on the OLED Screen and updated every second.
 * Measuring the current temperature.
-* Track and update device location in a real time.
+* Track and update device location in real time.
 * Reading GPS data (longitude, latitude) from [ThingSpeak](https://thingspeak.com/channels/920137) and display it using [Google Maps](https://www.google.com/maps/) with the [Maps JavaScript API](https://developers.google.com/maps/documentation/javascript/tutorial).
-* Refining data and synchronize with the web-based cloud service. (i.e. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/))
-* Refining average calculated data to separate channel on the web-based cloud service. (i.e. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/))
+* Refining data and synchronizing with the web-based cloud service. (i.e. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/))
+* Refining the average calculated data to separate channels on the web-based cloud service. (i.e. [ThingSpeak](https://www.thingspeak.com/), [Plaive](https://plaive.10make.com/))
 * Using reverse geocoding to convert a location (latitude, longitude) measured by the device to a readable address.
-* Using [Microsoft Excel](https://products.office.com/get-started-with-office-2019) to process batch of locations (latitude, longitude). Data can be exported in CSV format from [ThingSpeak](https://www.thingspeak.com/) to open in Excel.
+* Using [Microsoft Excel](https://products.office.com/get-started-with-office-2019) to process a batch of locations (latitude, longitude). Data can be exported in CSV format from [ThingSpeak](https://www.thingspeak.com/) to open in Excel.
 
 #### What is Reverse Geocoding?
-> Reverse geocoding is the process of back (reverse) coding of a point location (latitude, longitude) to a readable address or place name. This permits the identification of nearby street addresses, places, and/or areal subdivisions such as neighbourhoods, county, state, or country.
+> Reverse geocoding is the process of back (reverse) coding of a point location (latitude, longitude) to a readable address or place name. This permits the identification of nearby street addresses, places, and/or areal subdivisions such as neighbourhoods, counties, states, or countries.
 
 [More information on reverse geocoding with Google Maps JavaScript API](https://developers.google.com/maps/documentation/geocoding/intro#ReverseGeocoding)
 <br>
@@ -174,8 +174,8 @@ VBA Add-in code are not included in the GEOSage sample.
 * Up to 35 hours (1 day and 12 hours) of typical device usage.
 * Testing consisted of full-time active use until complete battery discharge. 
 * Wi-Fi was connected to a network.
-* Syncs data once every minute with PM 10.0 and PM 2.5 readings from the Nova PM (SDS011) Sensor, Temperature reading from the DS18B20 Temperature Sensor and GPS positioned reading values (longitude, latitude) from the GY-NEO6MV2 GPS Sensor.
-* Battery life may vary significantly with settings, usage and other factors.
+* Syncs data once every minute with PM 10.0 and PM 2.5 readings from the Nova PM (SDS011) Sensor, Temperature reading from the DS18B20 Temperature Sensor, and GPS-positioned reading values (longitude, latitude) from the GY-NEO6MV2 GPS Sensor.
+* Battery life may vary significantly with settings, usage, and other factors.
 
 ## Apparatus (Equipment)
 ### Platform
@@ -209,7 +209,7 @@ VBA Add-in code are not included in the GEOSage sample.
 ### Circular NFC Tag Sticker (N-Tag 216)
 * Size : 25.0 mm
 * Capacity : 926 Byte
-* This should be programmed to automatically opening the ThingSpeak Dashboard when the NFC Capable device has contacting on the NFC Tag Sticker.
+* This should be programmed to automatically open the ThingSpeak Dashboard when the NFC-capable device comes into contact with the NFC Tag Sticker.
 * https://www.amazon.com/GoToTags-Blank-White-Metal-NFC/dp/B00TRL774A/ref=sr_1_5?dchild=1&keywords=ntag216&qid=1591593422&sr=8-5
 
 
@@ -238,27 +238,27 @@ https://github.com/milesburton/Arduino-Temperature-Control-Library
 
 
 ### TinyGPSPlus (TinyGPS++) for GY-NEO6MV2
-A new, customizable Arduino NMEA parsing library A NEW Full-featured GPS/NMEA Parser for Arduino TinyGPS++ is a new Arduino library for parsing NMEA data streams provided by GPS modules.
+A new, customizable Arduino NMEA parsing library. A NEW Full-featured GPS/NMEA Parser for Arduino TinyGPS++ is a new Arduino library for parsing NMEA data streams provided by GPS modules.
 
 Like its predecessor, TinyGPS, this library provides compact and easy-to-use methods for extracting position, date, time, altitude, speed, and course from consumer GPS devices.<br>
 https://github.com/mikalhart/TinyGPSPlus
 
 ### SSD1306 (0.96") OLED Display
-This is a driver for SSD1306 128x64, 128x32, 64x48 and 64x32 OLED displays running on the Arduino/ESP8266 & ESP32 and mbed-os platforms. Can be used with either the I2C or SPI version of the display. <br>
+This is a driver for SSD1306 128x64, 128x32, 64x48, and 64x32 OLED displays running on the Arduino / ESP8266 & ESP32 and mbed-os platforms. Can be used with either the I2C or SPI version of the display. <br>
 https://www.github.com/ThingPulse/esp8266-oled-ssd1306
 
 ### RunningMedian
-Arduino library to determine the running median by means of a circular buffer. <br>
+Arduino library to determine the running median utilizing a circular buffer. <br>
 https://github.com/RobTillaart/Arduino/tree/master/libraries/RunningMedian
 
-Running Median looks like a running average with a small but important twist. Running average averages the last N samples while the running median takes the last N samples, sort them and take the middle one, or the average of the middle two.
+Running Median looks like a running average with a small but important twist. Running average averages the last N samples, while the running median takes the last N samples, sorts them, and takes the middle one, or the average of the middle two.
 
 Important differences between running average and running median:
-* Running median will return real data (e.g. a real sample from a sensor) if one uses an odd size of the buffer (preferred). Running average may return a value that is never sampled.
+* Running median will return real data (e.g., a real sample from a sensor) if one uses an odd size of the buffer (preferred). Running average may return a value that is never sampled.
 * Running median will give zero weight to outliers, and 100% to the middle sample, whereas running average gives the same weight to all samples.
-* Running median will give often constant values for some time.
-* As one knows the values in the buffer one can predict to some extend how much the next samples will change the running median.
-* Running median is a bit harder as one needs to keep the values in order to remove the oldest and keep them sorted to be able to select the median.
+* Running median will often give constant values for some time.
+* As one knows, the values in the buffer, one can predict to some extent how much the next samples will change the running median.
+* Running median is a bit harder as one needs to keep the values to remove the oldest and keep them sorted to be able to select the median.
 
 ## References
 * Christos Samaras 2018, Geocoding & Reverse Geocoding Functions In Google Sheets, My Engineering World, Christos Samaras, viewed 5 February 2020, <https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html>.
