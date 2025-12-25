@@ -8,7 +8,7 @@ latitude = data(:,4);
 longitude = data(:,5); 
 
 % Load map image 
-url = 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Mercator-projection.jpg/773px-Mercator-projection.jpg'; 
+url = 'https://blog.happybono.net/wp-content/uploads/2025/12/773px-Mercator-projection.jpg'; 
 img = imread(url); 
 [imgH,imgW,~] = size(img); 
 image(img/2+127) 
