@@ -145,7 +145,7 @@ VBA Add-in code is not included in the GEOSage sample.
 </details>
 
 #### December 25, 2025
-> [Changed image source to blog URL to resolve imread() access issue.]([https://github.com/happybono/FinedustMonitorWithGPS](https://github.com/happybono/FinedustMonitorWithGPS/commit/5cb7dc2b1ca8dca2396561faf552fcb2dcdea0da)
+> [Changed image source to blog URL to resolve imread() access issue.](https://github.com/happybono/FinedustMonitorWithGPS/commit/5cb7dc2b1ca8dca2396561faf552fcb2dcdea0da)
 
 ## Specifications
 ### Scenarios
