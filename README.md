@@ -10,7 +10,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
                                                                                                          
  
 ### Please note
-> This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not require a GPS module, please visit the following link: https://github.com/happybono/FinedustMonitor
+> This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not require a GPS module, please visit the following link : https://github.com/happybono/FinedustMonitor
  
 ![Final Product](FineDustMonitor_Device.jpg)
 
@@ -28,7 +28,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
 > [Read GPS data from ThingSpeak and displays it on Google Maps using ESP12e NodeMCU and GPSNeo6MV2 Module.](https://github.com/happybono/FinedustMonitorWithGPS/blob/master/Maps/GoogleMaps.html "FinedustMonitorWithGPS/Maps/GoogleMaps.html")
 
 #### December 25, 2019
-> [Now supports [Channel Status Updates] in ThingSpeak](https://thingspeak.com/channels/920137) : Updated [FinedustMonitorWithGPS.ino](https://github.com/happybono/FinedustMonitorWithGPS/commit/01367946fd2dc10b39b39dec19309892311e92ea "/FinedustMonitorWithGPS/FinedustMonitorWithGPS.ino"), [server.ino](https://github.com/happybono/FinedustMonitorWithGPS/commit/3c3a89e9d8a4e45f591379dc96e2e7b67e15914d "/FinedustMonitorWithGPS/server.ino")
+> [Now supports [Channel Status Updates] in ThingSpeak](https//thingspeak.com/channels/920137)  Updated [FinedustMonitorWithGPS.ino](https//github.com/happybono/FinedustMonitorWithGPS/commit/01367946fd2dc10b39b39dec19309892311e92ea "/FinedustMonitorWithGPS/FinedustMonitorWithGPS.ino"), [server.ino](https://github.com/happybono/FinedustMonitorWithGPS/commit/3c3a89e9d8a4e45f591379dc96e2e7b67e15914d "/FinedustMonitorWithGPS/server.ino")
 
 #### December 29, 2019
 > [Various bugs fixed.](https://github.com/happybono/FinedustMonitorWithGPS/commit/d6d25d7cf4dc4b91f174259ea1e473220ab79385)
@@ -252,14 +252,16 @@ https://www.github.com/ThingPulse/esp8266-oled-ssd1306
 Arduino library to determine the running median utilizing a circular buffer. <br>
 https://github.com/RobTillaart/Arduino/tree/master/libraries/RunningMedian
 
-Running Median looks like a running average with a small but important twist. Running average averages the last N samples, while the running median takes the last N samples, sorts them, and takes the middle one, or the average of the middle two.
+Running Median looks like a running average with a small but important twist.   
+**Running average** **averages** the last `N` samples,  
+while the **running median** takes the last `N` samples, **sorts them, and takes the middle one, or the average of the middle two**.
 
-Important differences between running average and running median:
-* Running median will return real data (e.g., a real sample from a sensor) if one uses an odd size of the buffer (preferred). Running average may return a value that is never sampled.
-* Running median will give zero weight to outliers, and 100% to the middle sample, whereas running average gives the same weight to all samples.
-* Running median will often give constant values for some time.
-* As one knows, the values in the buffer, one can predict to some extent how much the next samples will change the running median.
-* Running median is a bit harder as one needs to keep the values to remove the oldest and keep them sorted to be able to select the median.
+Important differences between **running average** and **running median** :
+* **Running median** will return real data (e.g., a real sample from a sensor) if one uses an odd size of the buffer (preferred). Running average may return a value that is never sampled.
+* **Running median** will give zero weight to outliers, and 100% to the middle sample, whereas running average gives the same weight to all samples.
+* **Running median** will often give constant values for some time.
+* As one knows, the values in the buffer, one can predict to some extent how much the next samples will change the **running median**.
+* **Running median** is a bit harder as one needs to keep the values to remove the oldest and keep them sorted to be able to select the median.
 
 ## References
 * Christos Samaras 2018, Geocoding & Reverse Geocoding Functions In Google Sheets, My Engineering World, Christos Samaras, viewed 5 February 2020, <https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html>.
