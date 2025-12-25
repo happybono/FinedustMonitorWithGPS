@@ -139,10 +139,13 @@ VBA Add-in code is not included in the GEOSage sample.
   
 #### April 16, 2022
 > [Update to support tightened the rules around query parameters in the ThingSpeak platform.](https://github.com/happybono/FinedustMonitorWithGPS/commit/42160c6df4b8b7759f6b9ec417fe9858e86d11a1)
-</details>
 
 #### March 26, 2025
 > [Applied text flipping animation to the "Latest PM sensor readings" plugin.](https://github.com/happybono/FinedustMonitorWithGPS/tree/master/Plugins/StatusUpdates)
+</details>
+
+#### December 25, 2025
+> [Changed image source to blog URL to resolve imread() access issue.]([https://github.com/happybono/FinedustMonitorWithGPS](https://github.com/happybono/FinedustMonitorWithGPS/commit/5cb7dc2b1ca8dca2396561faf552fcb2dcdea0da)
 
 ## Specifications
 ### Scenarios
