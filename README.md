@@ -10,6 +10,7 @@ Fine dust (air pollution) monitoring station. Air pollution monitoring channel u
                                                                                                          
  
 ### Please note
+> [!NOTE]
 > This project requires a GY-NEO6MV2 GPS Sensor. For a project that does not require a GPS module, please visit the following link : https://github.com/happybono/FinedustMonitor
  
 ![Final Product](FineDustMonitor_Device.jpg)
