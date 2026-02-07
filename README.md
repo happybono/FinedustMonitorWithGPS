@@ -256,12 +256,13 @@ https://github.com/RobTillaart/Arduino/tree/master/libraries/RunningMedian
 Running Median looks like a running average with a small but important twist.   
 **Running average** **averages** the last `N` samples, while the **running median** takes the last `N` samples, **sorts them, and takes the middle one, or the average of the middle two**.
 
-Important differences between **running average** and **running median** :
-* **Running median** will return real data (e.g., a real sample from a sensor) if one uses an odd size of the buffer (preferred). Running average may return a value that is never sampled.
-* **Running median** will give zero weight to outliers, and 100% to the middle sample, whereas running average gives the same weight to all samples.
-* **Running median** will often give constant values for some time.
-* As one knows, the values in the buffer, one can predict to some extent how much the next samples will change the **running median**.
-* **Running median** is a bit harder as one needs to keep the values to remove the oldest and keep them sorted to be able to select the median.
+> [!Important]
+> Important differences between **running average** and **running median** :
+> * **Running median** will return real data (e.g., a real sample from a sensor) if one uses an odd size of the buffer (preferred). Running average may return a value that is never sampled.
+> * **Running median** will give zero weight to outliers, and 100% to the middle sample, whereas running average gives the same weight to all samples.
+> * **Running median** will often give constant values for some time.
+> * As one knows, the values in the buffer, one can predict to some extent how much the next samples will change the **running median**.
+> * **Running median** is a bit harder as one needs to keep the values to remove the oldest and keep them sorted to be able to select the median.
 
 ## References
 * Christos Samaras 2018, Geocoding & Reverse Geocoding Functions In Google Sheets, My Engineering World, Christos Samaras, viewed 5 February 2020, <https://myengineeringworld.net/2018/08/geocoding-reverse-gas.html>.
